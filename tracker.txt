@@ -1,2 +1,3 @@
 Created test.txt file with content 'Hello, World!' in the root directory
 Created test-2.txt file with content 'Hello, World!' in the root directory
+Created beta.txt file with content 'Hello, World!' in the root directory
