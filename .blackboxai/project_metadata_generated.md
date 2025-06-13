@@ -9,9 +9,7 @@
   - Browser Automation: Selenium WebDriver\n- Test Scripts: test_selenium.py\n- Supported\
   \ Browsers: Chrome (headless mode)\n- WebDriver Management: Automatic driver detection\
   \ and setup\n\n## \U0001F4E6 Dependencies\n- selenium: Web browser automation\n\
-  - webdriver-manager: Automatic WebDriver management\n\n## \U0001F6E0 Development\
-  \ Patterns\n- Error Handling: Comprehensive try-catch blocks\n- Resource Cleanup:\
-  \ Proper browser session cleanup\n- Headless Operation: Browser automation without\
-  \ GUI\n- URL Navigation: Configurable target URLs\n\n## \U0001F4C4 Contribution\
-  \ & Governance\n- Repository: Nithin-dukay/python-test\n- Branch: main\n- Commit\
-  \ Pattern: Descriptive commit messages with feature lists"
+  - webdriver-manager: Automatic WebDriver management\n\n## \U0001F680 Deployment\n\
+  - Platform: Git-based repository\n- Remote: GitHub (Nithin-dukay/python-test)\n\
+  - Branch: main\n\n## \U0001F4C4 Contribution & Governance\n- Repository: Nithin-dukay/python-test\n\
+  - Version Control: Git\n- Remote Repository: GitHub"
