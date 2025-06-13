@@ -1,46 +1,63 @@
 automation_tools:
-  browser_support:
-  - Chrome
-  - Firefox
-  testing_mode: headless
-  web_automation: selenium
-  webdriver_management: webdriver-manager
+  web_automation:
+    browsers_supported:
+    - Chrome
+    - Firefox
+    features:
+    - headless_mode
+    - automatic_driver_management
+    - error_handling
+    - browser_detection
+    framework: Selenium WebDriver
 dependencies:
   package_manager: pip
   python_packages:
   - selenium
   - webdriver-manager
-git_workflow:
-  branch: main
-  commit_pattern: descriptive commits with feature lists
-  remote: origin
-languages:
-  detected:
-  - Python
-  - Markdown
-  - Shell
-  primary: Python
-project_structure:
-  root_files:
+documentation:
+  readme_files:
   - README.md
-  - bb-demo-test.md
-  - nithin.md
+  - README_selenium.md
+  usage_instructions: selenium automation setup and usage
+git_activity:
+  files_added:
   - selenium_browser.py
   - selenium_browser_enhanced.py
   - test_selenium.py
   - requirements.txt
   - README_selenium.md
-  text_files:
-  - a.txt
-  - b.txt
-  - c.txt
-  - test.txt
-  - test-2.txt
+  recent_commits:
+  - Add Selenium web browser automation scripts
+  - Add bb-demo-test.md file with Hello, World! content
+languages:
+  detected:
+  - Python
+  - Markdown
+  primary: Python
+project_structure:
+  directories:
+  - .blackboxai/
+  - .git/
+  root_files:
+  - README.md
+  - bb-demo-test.md
+  - nithin.md
   - tracker.txt
+  - selenium_browser.py
+  - selenium_browser_enhanced.py
+  - test_selenium.py
+  - requirements.txt
+  - README_selenium.md
+repository:
+  branch: main
+  name: python-test
+  owner: Nithin-dukay
 runtime_environment:
-  package_installation: pip install -r requirements.txt
-  python_command: python3
+  execution_verified: true
+  headless_browser_support: true
+  python_version: 3.x
 testing:
-  selenium_test: test_selenium.py
-  test_target: https://httpbin.org/html
-  verification: automated functionality testing
+  test_coverage: selenium_functionality
+  test_files:
+  - test_selenium.py
+  test_framework: custom
