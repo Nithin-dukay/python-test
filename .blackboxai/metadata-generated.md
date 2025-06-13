@@ -1,5 +1,5 @@
 automation_tools:
-- Selenium WebDriver
+- selenium
 browser_automation:
   headless_mode: true
   supported_browsers:
