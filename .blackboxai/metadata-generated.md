@@ -1,11 +1,35 @@
-"\n{\n  \"languages\": [\"Markdown\"],\n  \"primary_language\": \"Markdown\",\n  \"\
-  repository_name\": \"python-test\",\n  \"repository_owner\": \"Nithin-dukay\",\n\
-  \  \"branch\": \"main\",\n  \"file_types\": [\".md\", \".txt\"],\n  \"files_present\"\
-  : [\n    \"README.md\",\n    \"a.txt\", \n    \"b.txt\",\n    \"bb-demo-test.md\"\
-  ,\n    \"c.txt\",\n    \"nithin.md\",\n    \"test-2.txt\",\n    \"test.txt\",\n\
-  \    \"tracker.txt\"\n  ],\n  \"git_configured\": true,\n  \"remote_origin\": \"\
-  configured\",\n  \"working_directory\": \"/home/user/workspace\",\n  \"recent_commits\"\
-  : [\n    \"Add bb-demo-test.md file with Hello, World! content\",\n    \"Add nithin.md\
-  \ file with Hello, World! content\", \n    \"Update instructions.md\",\n    \"Updated\
-  \ .blackbox folder\",\n    \"updated the rules\"\n  ],\n  \"blackboxai_integration\"\
-  : true,\n  \"blackboxai_folder\": \".blackboxai\"\n}\n```"
+automation_tools:
+- Selenium WebDriver
+browser_automation:
+  headless_mode: true
+  supported_browsers:
+  - Chrome
+  - Firefox
+  webdriver_management: webdriver_manager
+dependencies:
+  selenium: latest
+  webdriver_manager: latest
+frameworks:
+- Selenium
+git_workflow:
+  branch: main
+  commit_style: descriptive with feature lists
+languages:
+- Python
+modules:
+- selenium
+- webdriver_manager
+package_manager: pip
+primary_language: Python
+project_structure:
+  automation_scripts:
+  - selenium_browser.py
+  - selenium_browser_enhanced.py
+  documentation:
+  - README_selenium.md
+  requirements: requirements.txt
+runtime_env: python3
+testing:
+  test_files:
+  - test_selenium.py
+  test_framework: custom
