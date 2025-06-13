@@ -1,15 +1,39 @@
-"# Project Metadata\n\n## \U0001F9D1\u200D\U0001F4BB Languages & Frameworks\n- Primary\
-  \ Language: Python\n- Languages Used: Python, Shell\n- Frameworks: Selenium WebDriver\n\
-  \n## \U0001F527 Tooling & Build System\n- Package Manager: pip\n- Virtual Environment:\
-  \ system python\n- Runtime: Python 3.x\n\n## \U0001F4C1 Code Structure & Modules\n\
-  - Root Files: Various text files (a.txt, b.txt, c.txt, test.txt, test-2.txt)\n-\
-  \ Documentation: README.md, bb-demo-test.md, nithin.md, README_selenium.md\n- Python\
-  \ Scripts: selenium_browser.py, selenium_browser_enhanced.py, test_selenium.py\n\
-  - Configuration: requirements.txt, tracker.txt\n\n## \U0001F9EA Testing & Automation\n\
-  - Browser Automation: Selenium WebDriver\n- Test Scripts: test_selenium.py\n- Supported\
-  \ Browsers: Chrome (headless mode)\n- WebDriver Management: Automatic driver detection\
-  \ and setup\n\n## \U0001F4E6 Dependencies\n- selenium: Web browser automation\n\
-  - webdriver-manager: Automatic WebDriver management\n\n## \U0001F680 Deployment\n\
-  - Platform: Git-based repository\n- Remote: GitHub (Nithin-dukay/python-test)\n\
-  - Branch: main\n\n## \U0001F4C4 Contribution & Governance\n- Repository: Nithin-dukay/python-test\n\
-  - Version Control: Git\n- Remote Repository: GitHub"
+# Project Metadata
+
+## 🧑‍💻 Languages & Frameworks
+- Primary Language: Python
+- Languages Used: Python, Shell
+- Frameworks: Selenium WebDriver
+
+## 🔧 Tooling & Build System
+- Package Manager: pip
+- Virtual Environment: system python
+- Runtime: Python 3.x
+
+## 📁 Code Structure & Modules
+- Root Files: Various text files (a.txt, b.txt, c.txt, test.txt, test-2.txt)
+- Documentation: README.md, bb-demo-test.md, nithin.md, README_selenium.md
+- Python Scripts: selenium_browser.py, selenium_browser_enhanced.py, test_selenium.py
+- Configuration: requirements.txt, tracker.txt
+
+## 🧪 Testing & Automation
+- Browser Automation: Selenium WebDriver
+- Test Scripts: test_selenium.py
+- Supported Browsers: Chrome (headless mode)
+- WebDriver Management: Automatic driver detection and setup
+
+## 📦 Dependencies
+- selenium: Web browser automation
+- webdriver-manager: Automatic WebDriver management
+
+## 🛠 Development Patterns
+- Error Handling: Comprehensive try-catch blocks
+- Resource Cleanup: Proper browser session cleanup
+- Headless Operation: Browser automation without GUI
+- URL Navigation: Configurable target URLs
+
+## 📄 Repository Information
+- Repository: Nithin-dukay/python-test
+- Branch: main
+- License: Not specified
+- Recent Activity: Selenium automation scripts addition
