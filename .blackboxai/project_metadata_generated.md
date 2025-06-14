@@ -2,41 +2,38 @@
 
 ## 🧑‍💻 Languages & Frameworks
 - Primary Language: Python
-- Languages Used: Python, HTML, CSS
-- Frameworks: Flask
-- Frontend: HTML5 with Tailwind CSS
+- Languages Used: Python, Shell
+- Frameworks: Selenium WebDriver
 
 ## 🔧 Tooling & Build System
 - Package Manager: pip
-- Runtime: Python 3.10
-- Dependencies: Flask 3.1.1
+- Virtual Environment: system python
+- Runtime: Python 3.x
 
 ## 📁 Code Structure & Modules
-- Entry Point: `app.py`
-- Static Files: `index.html`
-- Dependencies: `requirements.txt`
+- Modules: Root directory structure with various test files
+- Entry Points: 
+  - `selenium_browser.py` - Basic Selenium automation
+  - `selenium_browser_enhanced.py` - Enhanced Selenium with auto driver management
+  - `test_selenium.py` - Selenium functionality testing
 
-## 🌐 Web Application
-- Framework: Flask
-- Server Host: 0.0.0.0
-- Default Port: 5000
-- Routes: `/` (hello world page), `/health` (health check)
-
-## 🎨 Frontend Styling
-- CSS Framework: Tailwind CSS (CDN)
-- Design: Responsive design with gradient background
-- Features: Interactive hover effects, modern styling
+## 🧪 Testing & Automation
+- Testing Framework: Custom test scripts
+- Browser Automation: Selenium WebDriver
+- Supported Browsers: Chrome (headless), Firefox
+- WebDriver Management: Automatic driver detection and setup
 
 ## 📦 Dependencies
-- Flask: 3.1.1
-- Additional: blinker, click, werkzeug, jinja2, itsdangerous, markupsafe
+- Core Dependencies: selenium, webdriver-manager
+- Browser Support: Chrome WebDriver, Firefox GeckoDriver
+- Automation Features: Headless mode, error handling, cleanup
 
-## 🚀 Deployment
-- Server Configuration: Flask development server
-- Host: 0.0.0.0 (all interfaces)
-- Environment: Development
+## 📄 Documentation
+- README Files: `README_selenium.md` - Selenium usage documentation
+- Requirements: `requirements.txt` - Python package dependencies
 
-## 📄 Project Type
-- Type: Simple web application
-- Purpose: Hello World demonstration page
-- Architecture: Single-page application with Flask backend
+## 🔄 Version Control
+- Repository: Git-based
+- Branch: main
+- Remote: GitHub (Nithin-dukay/python-test)
+- Commit Pattern: Descriptive commits with feature summaries
