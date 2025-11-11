@@ -1,0 +1,230 @@
+{
+  "dataset_overview": {
+    "total_records": 612265,
+    "unique_games": 6729,
+    "date_range": {
+      "start": "2012-07-01",
+      "end": "2025-09-01"
+    },
+    "months_covered": 159
+  },
+  "latest_month": {
+    "month": "Sep-25",
+    "top_10_games": [
+      {
+        "name": "Counter-Strike 2",
+        "avg_players": 925940.31,
+        "peak_players": 1571060,
+        "gain_percent": -0.0027
+      },
+      {
+        "name": "PUBG: BATTLEGROUNDS",
+        "avg_players": 278095.62,
+        "peak_players": 707773,
+        "gain_percent": -0.0588999999999999
+      },
+      {
+        "name": "Rust",
+        "avg_players": 85515.0,
+        "peak_players": 152247,
+        "gain_percent": -0.1699
+      },
+      {
+        "name": "Wallpaper Engine",
+        "avg_players": 78471.64,
+        "peak_players": 141058,
+        "gain_percent": -0.1059
+      },
+      {
+        "name": "HELLDIVERS\u2122 2",
+        "avg_players": 68412.3,
+        "peak_players": 177327,
+        "gain_percent": 0.6920000000000001
+      },
+      {
+        "name": "Stardew Valley",
+        "avg_players": 58648.51,
+        "peak_players": 117743,
+        "gain_percent": -0.2168
+      },
+      {
+        "name": "Grand Theft Auto V Legacy",
+        "avg_players": 55605.21,
+        "peak_players": 98431,
+        "gain_percent": -0.1852
+      },
+      {
+        "name": "Tom Clancy's Rainbow Six\u00ae Siege X",
+        "avg_players": 51338.59,
+        "peak_players": 93669,
+        "gain_percent": -0.1673
+      },
+      {
+        "name": "Hollow Knight",
+        "avg_players": 50741.52,
+        "peak_players": 95428,
+        "gain_percent": 2.2654
+      },
+      {
+        "name": "Team Fortress 2",
+        "avg_players": 47672.62,
+        "peak_players": 67138,
+        "gain_percent": 0.034
+      }
+    ],
+    "fastest_growing": [
+      {
+        "name": "Data Hacker: Initiation",
+        "avg_players": 421.03,
+        "gain_percent": 212.8857
+      },
+      {
+        "name": "Puzzle Chambers",
+        "avg_players": 75.0,
+        "gain_percent": 151.954
+      },
+      {
+        "name": "Synonymy",
+        "avg_players": 1.29,
+        "gain_percent": 102.0303
+      },
+      {
+        "name": "The Housewife",
+        "avg_players": 376.59,
+        "gain_percent": 82.6416
+      },
+      {
+        "name": "Dead6hot",
+        "avg_players": 276.43,
+        "gain_percent": 81.21
+      },
+      {
+        "name": "Factory Hiro",
+        "avg_players": 0.95,
+        "gain_percent": 78.95
+      },
+      {
+        "name": "Broken Dreams",
+        "avg_players": 318.76,
+        "gain_percent": 72.3916
+      },
+      {
+        "name": "The Crew\u2122",
+        "avg_players": 103.24,
+        "gain_percent": 56.8869
+      },
+      {
+        "name": "Away",
+        "avg_players": 35.83,
+        "gain_percent": 36.7435
+      },
+      {
+        "name": "PICO PARK:Classic Edition",
+        "avg_players": 459.82,
+        "gain_percent": 27.2969
+      }
+    ],
+    "biggest_declines": [
+      {
+        "name": "Mountain Trap 2: Under the Cloak of Fear",
+        "avg_players": 0.84,
+        "gain_percent": -0.9835
+      },
+      {
+        "name": "Super Switch",
+        "avg_players": 1.43,
+        "gain_percent": -0.977
+      },
+      {
+        "name": "Tumblestone",
+        "avg_players": 3.27,
+        "gain_percent": -0.9687
+      },
+      {
+        "name": "Ironsight",
+        "avg_players": 2.19,
+        "gain_percent": -0.9229
+      },
+      {
+        "name": "Bang Bang Fruit",
+        "avg_players": 3.07,
+        "gain_percent": -0.8723000000000001
+      },
+      {
+        "name": "Cannons-Defenders: Steam Edition",
+        "avg_players": 3.73,
+        "gain_percent": -0.8595
+      },
+      {
+        "name": "Artifact",
+        "avg_players": 52.18,
+        "gain_percent": -0.8227
+      },
+      {
+        "name": "Color Jumper",
+        "avg_players": 1.16,
+        "gain_percent": -0.8212999999999999
+      },
+      {
+        "name": "The Adventurer - Episode 1: Beginning of the End",
+        "avg_players": 11.85,
+        "gain_percent": -0.7988
+      },
+      {
+        "name": "Exo One",
+        "avg_players": 4.42,
+        "gain_percent": -0.7968999999999999
+      }
+    ]
+  },
+  "market_segments": {
+    "AAA Blockbusters": {
+      "count": 2,
+      "median_players": 602017.9650000001,
+      "avg_growth_percent": -0.03079999999999995
+    },
+    "Popular Games": {
+      "count": 51,
+      "median_players": 19187.19,
+      "avg_growth_percent": 0.020960784313725507
+    },
+    "Mid-tier Games": {
+      "count": 153,
+      "median_players": 2083.4,
+      "avg_growth_percent": 0.0402640522875817
+    },
+    "Indie Games": {
+      "count": 636,
+      "median_players": 236.865,
+      "avg_growth_percent": 0.8706232704402516
+    },
+    "Niche Games": {
+      "count": 3035,
+      "median_players": 8.73,
+      "avg_growth_percent": 0.12475014827018122
+    }
+  },
+  "consistent_growers": [],
+  "all_time_peaks": {
+    "PUBG: BATTLEGROUNDS": 3236027,
+    "Counter-Strike 2": 1818368,
+    "Terraria": 486918,
+    "Fallout 4": 471955,
+    "Life is Strange 2": 468634,
+    "HELLDIVERS\u2122 2": 458208,
+    "POSTAL": 408008,
+    "World of Warships": 400538,
+    "Grand Theft Auto V Legacy": 360761,
+    "Monster Hunter: World": 329333,
+    "Kholat": 275043,
+    "Dying Light 2 Stay Human: Reloaded Edition": 274983,
+    "Rust": 259646,
+    "Team Fortress 2": 253225,
+    "Mount & Blade II: Bannerlord": 248034,
+    "PAYDAY 2": 247628,
+    "ARK: Survival Evolved": 247292,
+    "Stardew Valley": 236614,
+    "Path of Exile": 228398,
+    "FOR HONOR\u2122": 216499
+  }
+}
