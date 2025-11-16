@@ -1,0 +1,208 @@
+{
+  "overall_metrics": {
+    "total_sales": 2297200.8603000003,
+    "total_profit": 286397.0216999999,
+    "avg_profit_margin": 12.031392972104454,
+    "total_quantity": 37873,
+    "return_rate": 8.004802881729036
+  },
+  "category_performance": {
+    "Sales": {
+      "Technology": 836154.03,
+      "Furniture": 741999.8,
+      "Office Supplies": 719047.03
+    },
+    "Profit": {
+      "Technology": 145454.95,
+      "Furniture": 18451.27,
+      "Office Supplies": 122490.8
+    },
+    "Quantity": {
+      "Technology": 6939,
+      "Furniture": 8028,
+      "Office Supplies": 22906
+    },
+    "Order ID": {
+      "Technology": 1847,
+      "Furniture": 2121,
+      "Office Supplies": 6026
+    },
+    "Profit Margin %": {
+      "Technology": 17.4,
+      "Furniture": 2.49,
+      "Office Supplies": 17.04
+    }
+  },
+  "top_subcategories": {
+    "Sales": {
+      "Phones": 330007.05,
+      "Chairs": 328449.1,
+      "Storage": 223843.61,
+      "Tables": 206965.53,
+      "Binders": 203412.73,
+      "Machines": 189238.63,
+      "Accessories": 167380.32,
+      "Copiers": 149528.03,
+      "Bookcases": 114880.0,
+      "Appliances": 107532.16
+    },
+    "Profit": {
+      "Phones": 44515.73,
+      "Chairs": 26590.17,
+      "Storage": 21278.83,
+      "Tables": -17725.48,
+      "Binders": 30221.76,
+      "Machines": 3384.76,
+      "Accessories": 41936.64,
+      "Copiers": 55617.82,
+      "Bookcases": -3472.56,
+      "Appliances": 18138.01
+    },
+    "Quantity": {
+      "Phones": 3289,
+      "Chairs": 2356,
+      "Storage": 3158,
+      "Tables": 1241,
+      "Binders": 5974,
+      "Machines": 440,
+      "Accessories": 2976,
+      "Copiers": 234,
+      "Bookcases": 868,
+      "Appliances": 1729
+    },
+    "Profit Margin %": {
+      "Phones": 13.49,
+      "Chairs": 8.1,
+      "Storage": 9.51,
+      "Tables": -8.56,
+      "Binders": 14.86,
+      "Machines": 1.79,
+      "Accessories": 25.05,
+      "Copiers": 37.2,
+      "Bookcases": -3.02,
+      "Appliances": 16.87
+    }
+  },
+  "regional_performance": {
+    "Sales": {
+      "West": 725457.82,
+      "East": 678781.24,
+      "Central": 501239.89,
+      "South": 391721.9
+    },
+    "Profit": {
+      "West": 108418.45,
+      "East": 91522.78,
+      "Central": 39706.36,
+      "South": 46749.43
+    },
+    "Quantity": {
+      "West": 12266,
+      "East": 10618,
+      "Central": 8780,
+      "South": 6209
+    },
+    "Customer ID": {
+      "West": 686,
+      "East": 674,
+      "Central": 629,
+      "South": 512
+    },
+    "Profit Margin %": {
+      "West": 14.94,
+      "East": 13.48,
+      "Central": 7.92,
+      "South": 11.93
+    }
+  },
+  "segment_performance": {
+    "Sales": {
+      "Consumer": 1161401.34,
+      "Corporate": 706146.37,
+      "Home Office": 429653.15
+    },
+    "Profit": {
+      "Consumer": 134119.21,
+      "Corporate": 91979.13,
+      "Home Office": 60298.68
+    },
+    "Quantity": {
+      "Consumer": 19521,
+      "Corporate": 11608,
+      "Home Office": 6744
+    },
+    "Customer ID": {
+      "Consumer": 409,
+      "Corporate": 236,
+      "Home Office": 148
+    },
+    "Profit Margin %": {
+      "Consumer": 11.55,
+      "Corporate": 13.03,
+      "Home Office": 14.03
+    }
+  },
+  "shipping_analysis": {
+    "Sales": {
+      "Standard Class": 1358215.74,
+      "Second Class": 459193.57,
+      "First Class": 351428.42,
+      "Same Day": 128363.12
+    },
+    "Profit": {
+      "Standard Class": 164088.79,
+      "Second Class": 57446.64,
+      "First Class": 48969.84,
+      "Same Day": 15891.76
+    },
+    "Shipping Days": {
+      "Standard Class": 5.01,
+      "Second Class": 3.24,
+      "First Class": 2.18,
+      "Same Day": 0.04
+    },
+    "Order ID": {
+      "Standard Class": 5968,
+      "Second Class": 1945,
+      "First Class": 1538,
+      "Same Day": 543
+    }
+  },
+  "discount_impact": {
+    "Sales": {
+      "No Discount": 1087908.47,
+      "0-10%": 54369.35,
+      "10-20%": 792152.89,
+      "20-30%": 103226.66,
+      "30%+": 259543.49
+    },
+    "Profit": {
+      "No Discount": 320987.6,
+      "0-10%": 9029.18,
+      "10-20%": 91756.3,
+      "20-30%": -10369.28,
+      "30%+": -125006.78
+    },
+    "Quantity": {
+      "No Discount": 18267,
+      "0-10%": 373,
+      "10-20%": 13858,
+      "20-30%": 849,
+      "30%+": 4526
+    },
+    "Order ID": {
+      "No Discount": 4798,
+      "0-10%": 94,
+      "10-20%": 3709,
+      "20-30%": 227,
+      "30%+": 1166
+    },
+    "Profit Margin %": {
+      "No Discount": 29.51,
+      "0-10%": 16.61,
+      "10-20%": 11.58,
+      "20-30%": -10.05,
+      "30%+": -48.16
+    }
+  }
+}

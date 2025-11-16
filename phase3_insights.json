@@ -1,0 +1,432 @@
+{
+  "yearly_trends": [
+    {
+      "Year": 2014,
+      "Sales": 484247.5,
+      "Profit": 49543.97,
+      "Quantity": 7581,
+      "Order ID": 969,
+      "Profit Margin %": 10.23,
+      "YoY Sales Growth %": NaN
+    },
+    {
+      "Year": 2015,
+      "Sales": 470532.51,
+      "Profit": 61618.6,
+      "Quantity": 7979,
+      "Order ID": 1038,
+      "Profit Margin %": 13.1,
+      "YoY Sales Growth %": -2.8322273217724403
+    },
+    {
+      "Year": 2016,
+      "Sales": 609205.6,
+      "Profit": 81795.17,
+      "Quantity": 9837,
+      "Order ID": 1315,
+      "Profit Margin %": 13.43,
+      "YoY Sales Growth %": 29.471521532061608
+    },
+    {
+      "Year": 2017,
+      "Sales": 733215.26,
+      "Profit": 93439.27,
+      "Quantity": 12476,
+      "Order ID": 1687,
+      "Profit Margin %": 12.74,
+      "YoY Sales Growth %": 20.3559619281241
+    }
+  ],
+  "best_months": [
+    {
+      "Year": 2017,
+      "Month": 11,
+      "Sales": 118447.82,
+      "Profit": 9690.1,
+      "Quantity": 1840
+    },
+    {
+      "Year": 2016,
+      "Month": 12,
+      "Sales": 96999.04,
+      "Profit": 17885.31,
+      "Quantity": 1414
+    },
+    {
+      "Year": 2017,
+      "Month": 9,
+      "Sales": 87866.65,
+      "Profit": 10991.56,
+      "Quantity": 1660
+    },
+    {
+      "Year": 2017,
+      "Month": 12,
+      "Sales": 83829.32,
+      "Profit": 8483.35,
+      "Quantity": 1723
+    },
+    {
+      "Year": 2014,
+      "Month": 9,
+      "Sales": 81777.35,
+      "Profit": 8328.1,
+      "Quantity": 1000
+    }
+  ],
+  "worst_months": [
+    {
+      "Year": 2014,
+      "Month": 2,
+      "Sales": 4519.89,
+      "Profit": 862.31,
+      "Quantity": 159
+    },
+    {
+      "Year": 2015,
+      "Month": 2,
+      "Sales": 11951.41,
+      "Profit": 2813.85,
+      "Quantity": 239
+    },
+    {
+      "Year": 2014,
+      "Month": 1,
+      "Sales": 14236.9,
+      "Profit": 2450.19,
+      "Quantity": 284
+    },
+    {
+      "Year": 2015,
+      "Month": 1,
+      "Sales": 18174.08,
+      "Profit": -3281.01,
+      "Quantity": 236
+    },
+    {
+      "Year": 2016,
+      "Month": 1,
+      "Sales": 18542.49,
+      "Profit": 2824.82,
+      "Quantity": 358
+    }
+  ],
+  "top_customers": [
+    {
+      "Customer ID": "SM-20320",
+      "Customer Name": "Sean Miller",
+      "Sales": 25043.05,
+      "Profit": -1980.74,
+      "Order ID": 5,
+      "Quantity": 50
+    },
+    {
+      "Customer ID": "TC-20980",
+      "Customer Name": "Tamara Chand",
+      "Sales": 19052.22,
+      "Profit": 8981.32,
+      "Order ID": 5,
+      "Quantity": 42
+    },
+    {
+      "Customer ID": "RB-19360",
+      "Customer Name": "Raymond Buch",
+      "Sales": 15117.34,
+      "Profit": 6976.1,
+      "Order ID": 6,
+      "Quantity": 71
+    },
+    {
+      "Customer ID": "TA-21385",
+      "Customer Name": "Tom Ashbrook",
+      "Sales": 14595.62,
+      "Profit": 4703.79,
+      "Order ID": 4,
+      "Quantity": 36
+    },
+    {
+      "Customer ID": "AB-10105",
+      "Customer Name": "Adrian Barton",
+      "Sales": 14473.57,
+      "Profit": 5444.81,
+      "Order ID": 10,
+      "Quantity": 73
+    },
+    {
+      "Customer ID": "KL-16645",
+      "Customer Name": "Ken Lonsdale",
+      "Sales": 14175.23,
+      "Profit": 806.85,
+      "Order ID": 12,
+      "Quantity": 113
+    },
+    {
+      "Customer ID": "SC-20095",
+      "Customer Name": "Sanjit Chand",
+      "Sales": 14142.33,
+      "Profit": 5757.41,
+      "Order ID": 9,
+      "Quantity": 87
+    },
+    {
+      "Customer ID": "HL-15040",
+      "Customer Name": "Hunter Lopez",
+      "Sales": 12873.3,
+      "Profit": 5622.43,
+      "Order ID": 6,
+      "Quantity": 50
+    },
+    {
+      "Customer ID": "SE-20110",
+      "Customer Name": "Sanjit Engle",
+      "Sales": 12209.44,
+      "Profit": 2650.68,
+      "Order ID": 11,
+      "Quantity": 78
+    },
+    {
+      "Customer ID": "CC-12370",
+      "Customer Name": "Christopher Conant",
+      "Sales": 12129.07,
+      "Profit": 2177.05,
+      "Order ID": 5,
+      "Quantity": 34
+    }
+  ],
+  "top_products": [
+    {
+      "Product ID": "TEC-CO-10004722",
+      "Product Name": "Canon imageCLASS 2200 Advanced Copier",
+      "Sales": 61599.82,
+      "Profit": 25199.93,
+      "Quantity": 20,
+      "Profit Margin %": 40.91
+    },
+    {
+      "Product ID": "OFF-BI-10003527",
+      "Product Name": "Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind",
+      "Sales": 27453.38,
+      "Profit": 7753.04,
+      "Quantity": 31,
+      "Profit Margin %": 28.24
+    },
+    {
+      "Product ID": "TEC-MA-10002412",
+      "Product Name": "Cisco TelePresence System EX90 Videoconferencing Unit",
+      "Sales": 22638.48,
+      "Profit": -1811.08,
+      "Quantity": 6,
+      "Profit Margin %": -8.0
+    },
+    {
+      "Product ID": "FUR-CH-10002024",
+      "Product Name": "HON 5400 Series Task Chairs for Big and Tall",
+      "Sales": 21870.58,
+      "Profit": 0.0,
+      "Quantity": 39,
+      "Profit Margin %": 0.0
+    },
+    {
+      "Product ID": "OFF-BI-10001359",
+      "Product Name": "GBC DocuBind TL300 Electric Binding System",
+      "Sales": 19823.48,
+      "Profit": 2233.51,
+      "Quantity": 37,
+      "Profit Margin %": 11.27
+    },
+    {
+      "Product ID": "OFF-BI-10000545",
+      "Product Name": "GBC Ibimaster 500 Manual ProClick Binding System",
+      "Sales": 19024.5,
+      "Profit": 760.98,
+      "Quantity": 48,
+      "Profit Margin %": 4.0
+    },
+    {
+      "Product ID": "TEC-CO-10001449",
+      "Product Name": "Hewlett Packard LaserJet 3310 Copier",
+      "Sales": 18839.69,
+      "Profit": 6983.88,
+      "Quantity": 38,
+      "Profit Margin %": 37.07
+    },
+    {
+      "Product ID": "TEC-MA-10001127",
+      "Product Name": "HP Designjet T520 Inkjet Large Format Printer - 24\" Color",
+      "Sales": 18374.9,
+      "Profit": 4094.98,
+      "Quantity": 12,
+      "Profit Margin %": 22.29
+    },
+    {
+      "Product ID": "OFF-BI-10004995",
+      "Product Name": "GBC DocuBind P400 Electric Binding System",
+      "Sales": 17965.07,
+      "Profit": -1878.17,
+      "Quantity": 27,
+      "Profit Margin %": -10.45
+    },
+    {
+      "Product ID": "OFF-SU-10000151",
+      "Product Name": "High Speed Automatic Electric Letter Opener",
+      "Sales": 17030.31,
+      "Profit": -262.0,
+      "Quantity": 11,
+      "Profit Margin %": -1.54
+    }
+  ],
+  "loss_making_products": [
+    {
+      "Product ID": "TEC-MA-10000418",
+      "Product Name": "Cubify CubeX 3D Printer Double Head Print",
+      "Sales": 11099.96,
+      "Profit": -8879.97,
+      "Quantity": 9,
+      "Profit Margin %": -80.0
+    },
+    {
+      "Product ID": "TEC-MA-10000822",
+      "Product Name": "Lexmark MX611dhe Monochrome Laser Printer",
+      "Sales": 16829.9,
+      "Profit": -4589.97,
+      "Quantity": 18,
+      "Profit Margin %": -27.27
+    },
+    {
+      "Product ID": "TEC-MA-10004125",
+      "Product Name": "Cubify CubeX 3D Printer Triple Head Print",
+      "Sales": 7999.98,
+      "Profit": -3839.99,
+      "Quantity": 4,
+      "Profit Margin %": -48.0
+    },
+    {
+      "Product ID": "FUR-TA-10000198",
+      "Product Name": "Chromcraft Bull-Nose Wood Oval Conference Tables & Bases",
+      "Sales": 9917.64,
+      "Profit": -2876.12,
+      "Quantity": 27,
+      "Profit Margin %": -29.0
+    },
+    {
+      "Product ID": "FUR-TA-10001889",
+      "Product Name": "Bush Advantage Collection Racetrack Conference Table",
+      "Sales": 9544.72,
+      "Profit": -1934.4,
+      "Quantity": 33,
+      "Profit Margin %": -20.27
+    },
+    {
+      "Product ID": "OFF-BI-10004995",
+      "Product Name": "GBC DocuBind P400 Electric Binding System",
+      "Sales": 17965.07,
+      "Profit": -1878.17,
+      "Quantity": 27,
+      "Profit Margin %": -10.45
+    },
+    {
+      "Product ID": "TEC-MA-10002412",
+      "Product Name": "Cisco TelePresence System EX90 Videoconferencing Unit",
+      "Sales": 22638.48,
+      "Profit": -1811.08,
+      "Quantity": 6,
+      "Profit Margin %": -8.0
+    },
+    {
+      "Product ID": "OFF-SU-10002881",
+      "Product Name": "Martin Yale Chadless Opener Electric Letter Opener",
+      "Sales": 16656.2,
+      "Profit": -1299.18,
+      "Quantity": 22,
+      "Profit Margin %": -7.8
+    },
+    {
+      "Product ID": "FUR-TA-10001950",
+      "Product Name": "Balt Solid Wood Round Tables",
+      "Sales": 6518.75,
+      "Profit": -1201.06,
+      "Quantity": 19,
+      "Profit Margin %": -18.42
+    },
+    {
+      "Product ID": "FUR-TA-10004289",
+      "Product Name": "BoxOffice By Design Rectangular and Half-Moon Meeting Room Tables",
+      "Sales": 1706.25,
+      "Profit": -1148.44,
+      "Quantity": 15,
+      "Profit Margin %": -67.31
+    }
+  ],
+  "top_states": [
+    {
+      "State": "California",
+      "Sales": 457687.63,
+      "Profit": 76381.39,
+      "Customer ID": 577,
+      "Profit Margin %": 16.69
+    },
+    {
+      "State": "New York",
+      "Sales": 310876.27,
+      "Profit": 74038.55,
+      "Customer ID": 415,
+      "Profit Margin %": 23.82
+    },
+    {
+      "State": "Texas",
+      "Sales": 170188.05,
+      "Profit": -25729.36,
+      "Customer ID": 370,
+      "Profit Margin %": -15.12
+    },
+    {
+      "State": "Washington",
+      "Sales": 138641.27,
+      "Profit": 33402.65,
+      "Customer ID": 224,
+      "Profit Margin %": 24.09
+    },
+    {
+      "State": "Pennsylvania",
+      "Sales": 116511.91,
+      "Profit": -15559.96,
+      "Customer ID": 257,
+      "Profit Margin %": -13.35
+    },
+    {
+      "State": "Florida",
+      "Sales": 89473.71,
+      "Profit": -3399.3,
+      "Customer ID": 181,
+      "Profit Margin %": -3.8
+    },
+    {
+      "State": "Illinois",
+      "Sales": 80166.1,
+      "Profit": -12607.89,
+      "Customer ID": 237,
+      "Profit Margin %": -15.73
+    },
+    {
+      "State": "Ohio",
+      "Sales": 78258.14,
+      "Profit": -16971.38,
+      "Customer ID": 202,
+      "Profit Margin %": -21.69
+    },
+    {
+      "State": "Michigan",
+      "Sales": 76269.61,
+      "Profit": 24463.19,
+      "Customer ID": 106,
+      "Profit Margin %": 32.07
+    },
+    {
+      "State": "Virginia",
+      "Sales": 70636.72,
+      "Profit": 18597.95,
+      "Customer ID": 107,
+      "Profit Margin %": 26.33
+    }
+  ]
+}
