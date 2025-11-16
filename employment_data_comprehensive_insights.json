@@ -1,0 +1,72 @@
+{
+  "dataset_summary": {
+    "total_records": 20108,
+    "time_period": "2011 - 2025",
+    "quarters_covered": 57
+  },
+  "categories": {
+    "groups": [
+      "Industry by employment variable",
+      "Sex by employment variable",
+      "Age by employment variable",
+      "Region by employment variable",
+      "Territorial authority by employment variable"
+    ],
+    "employment_variables": [
+      "Filled jobs",
+      "Total earnings",
+      "Filled jobs (workplace location based)"
+    ],
+    "data_types": [
+      "Actual",
+      "Seasonally adjusted",
+      "Trend"
+    ]
+  },
+  "industries": [
+    "Agriculture, Forestry and Fishing",
+    "Mining",
+    "Manufacturing",
+    "Electricity, Gas, Water and Waste Services"
+  ],
+  "age_groups": [
+    "15-19",
+    "20-24",
+    "25-29",
+    "30-34",
+    "35-39",
+    "40-44",
+    "45-49",
+    "50-54",
+    "55-59",
+    "60-64",
+    "65 +"
+  ],
+  "sex_categories": [
+    "Male",
+    "Female"
+  ],
+  "regions": [
+    "Northland",
+    "Auckland",
+    "Waikato",
+    "Bay of Plenty",
+    "Gisborne",
+    "Hawke's Bay",
+    "Taranaki",
+    "Manawatu-Whanganui",
+    "Wellington",
+    "Tasman",
+    "Nelson",
+    "Marlborough",
+    "West Coast",
+    "Canterbury",
+    "Otago",
+    "Southland"
+  ],
+  "data_quality": {
+    "suppressed_records": 1718,
+    "missing_data_values": 1718,
+    "complete_records": 18390
+  }
+}

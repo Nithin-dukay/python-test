@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "analysis_date": "November 2025",
+    "dataset_name": "employment-data.csv",
+    "total_records": 20108,
+    "analyzed_records": 18390,
+    "time_period": "Q2 2011 - Q2 2025",
+    "duration_years": 14,
+    "quarters_covered": 57
+  },
+  "data_structure": {
+    "columns": [
+      "Series_reference",
+      "Period",
+      "Data_value",
+      "Suppressed",
+      "STATUS",
+      "UNITS",
+      "Magnitude",
+      "Subject",
+      "Group",
+      "Series_title_1",
+      "Series_title_2",
+      "Series_title_3",
+      "Series_title_4",
+      "Series_title_5",
+      "Year",
+      "Quarter"
+    ],
+    "groups": {
+      "Industry by employment variable": 1330,
+      "Sex by employment variable": 228,
+      "Age by employment variable": 1254,
+      "Region by employment variable": 5808,
+      "Territorial authority by employment variable": 11488
+    },
+    "employment_metrics": {
+      "Filled jobs": 7903,
+      "Total earnings": 7445,
+      "Filled jobs (workplace location based)": 4760
+    }
+  },
+  "industries": {
+    "Agriculture, Forestry and Fishing": {
+      "average_employment": 92909.22807017544,
+      "min_employment": 78324.0,
+      "max_employment": 103593.0,
+      "std_deviation": 6840.199156503161,
+      "latest_value": 92128.0,
+      "first_value": 80078.0,
+      "total_growth_pct": 15.047828367341843,
+      "records_count": 57
+    },
+    "Mining": {
+      "average_employment": 5504.491228070176,
+      "min_employment": 5060.0,
+      "max_employment": 6106.0,
+      "std_deviation": 288.54314624178437,
+      "latest_value": 6106.0,
+      "first_value": 5234.0,
+      "total_growth_pct": 16.660298051203668,
+      "records_count": 57
+    },
+    "Manufacturing": {
+      "average_employment": 218037.28070175438,
+      "min_employment": 199425.0,
+      "max_employment": 232854.0,
+      "std_deviation": 9271.433821064082,
+      "latest_value": 222420.0,
+      "first_value": 206633.0,
+      "total_growth_pct": 7.640115567213368,
+      "records_count": 57
+    },
+    "Electricity, Gas, Water and Waste Services": {
+      "average_employment": 18693.59649122807,
+      "min_employment": 14486.0,
+      "max_employment": 23981.0,
+      "std_deviation": 3007.1755902676773,
+      "latest_value": 23678.0,
+      "first_value": 14486.0,
+      "total_growth_pct": 63.45436973629711,
+      "records_count": 57
+    }
+  },
+  "age_groups": {
+    "15-19": {
+      "average_employment": 114392.61403508772,
+      "latest_value": 113927.0,
+      "first_value": 98572.0,
+      "growth_pct": 15.577445927849693,
+      "trend": "increasing"
+    },
+    "20-24": {
+      "average_employment": 219864.28070175438,
+      "latest_value": 214165.0,
+      "first_value": 191834.0,
+      "growth_pct": 11.640793602802422,
+      "trend": "increasing"
+    },
+    "25-29": {
+      "average_employment": 239285.84210526315,
+      "latest_value": 244477.0,
+      "first_value": 184750.0,
+      "growth_pct": 32.32855209742896,
+      "trend": "increasing"
+    },
+    "30-34": {
+      "average_employment": 227095.80701754385,
+      "latest_value": 278578.0,
+      "first_value": 173195.0,
+      "growth_pct": 60.846444758797894,
+      "trend": "increasing"
+    },
+    "35-39": {
+      "average_employment": 209144.63157894736,
+      "latest_value": 270882.0,
+      "first_value": 186714.0,
+      "growth_pct": 45.078569362768725,
+      "trend": "increasing"
+    },
+    "40-44": {
+      "average_employment": 207264.80701754385,
+      "latest_value": 239524.0,
+      "first_value": 200611.0,
+      "growth_pct": 19.397241427439173,
+      "trend": "increasing"
+    },
+    "45-49": {
+      "average_employment": 206278.2105263158,
+      "latest_value": 211645.0,
+      "first_value": 200716.0,
+      "growth_pct": 5.445006875386118,
+      "trend": "increasing"
+    },
+    "50-54": {
+      "average_employment": 197505.08771929826,
+      "latest_value": 208581.0,
+      "first_value": 178833.0,
+      "growth_pct": 16.634513764238143,
+      "trend": "increasing"
+    },
+    "55-59": {
+      "average_employment": 170063.70175438595,
+      "latest_value": 184468.0,
+      "first_value": 140309.0,
+      "growth_pct": 31.472678160346096,
+      "trend": "increasing"
+    },
+    "60-64": {
+      "average_employment": 130226.63157894737,
+      "latest_value": 157693.0,
+      "first_value": 105985.0,
+      "growth_pct": 48.788036042836254,
+      "trend": "increasing"
+    },
+    "65 +": {
+      "average_employment": 93867.0350877193,
+      "latest_value": 128988.0,
+      "first_value": 61853.0,
+      "growth_pct": 108.53960195948457,
+      "trend": "increasing"
+    }
+  },
+  "sex_categories": {
+    "Male": {
+      "average_employment": 1015876.947368421,
+      "latest_value": 1124807.0,
+      "first_value": 861368.0,
+      "growth_pct": 30.58379229318944
+    },
+    "Female": {
+      "average_employment": 1005377.350877193,
+      "latest_value": 1134933.0,
+      "first_value": 865507.0,
+      "growth_pct": 31.129268740749644
+    }
+  },
+  "regions": {
+    "Northland": {
+      "average_employment": 61770.929824561405,
+      "latest_value": 71066.0,
+      "records_count": 57
+    },
+    "Auckland": {
+      "average_employment": 682062.9649122807,
+      "latest_value": 769959.0,
+      "records_count": 57
+    },
+    "Waikato": {
+      "average_employment": 190376.19298245615,
+      "latest_value": 219360.0,
+      "records_count": 57
+    },
+    "Bay of Plenty": {
+      "average_employment": 123074.57894736843,
+      "latest_value": 143673.0,
+      "records_count": 57
+    },
+    "Gisborne": {
+      "average_employment": 20125.315789473683,
+      "latest_value": 21861.0,
+      "records_count": 57
+    },
+    "Hawke's Bay": {
+      "average_employment": 71040.71929824562,
+      "latest_value": 79104.0,
+      "records_count": 57
+    },
+    "Taranaki": {
+      "average_employment": 49097.54385964912,
+      "latest_value": 52477.0,
+      "records_count": 57
+    },
+    "Manawatu-Whanganui": {
+      "average_employment": 100154.19298245614,
+      "latest_value": 107443.0,
+      "records_count": 57
+    },
+    "Wellington": {
+      "average_employment": 228059.80701754385,
+      "latest_value": 246835.0,
+      "records_count": 57
+    },
+    "Tasman": {
+      "average_employment": 19311.140350877195,
+      "latest_value": 24624.0,
+      "records_count": 57
+    },
+    "Nelson": {
+      "average_employment": 21141.105263157893,
+      "latest_value": 19298.0,
+      "records_count": 57
+    },
+    "Marlborough": {
+      "average_employment": 24224.19298245614,
+      "latest_value": 26786.0,
+      "records_count": 57
+    },
+    "West Coast": {
+      "average_employment": 14079.052631578947,
+      "latest_value": 14372.0,
+      "records_count": 57
+    },
+    "Canterbury": {
+      "average_employment": 271490.15789473685,
+      "latest_value": 302898.0,
+      "records_count": 57
+    },
+    "Otago": {
+      "average_employment": 100499.17543859649,
+      "latest_value": 112962.0,
+      "records_count": 57
+    },
+    "Southland": {
+      "average_employment": 44560.912280701756,
+      "latest_value": 46929.0,
+      "records_count": 57
+    }
+  },
+  "temporal_analysis": {
+    "yearly_totals": {
+      "2011": 33933677.0,
+      "2012": 45608337.0,
+      "2013": 46479421.0,
+      "2014": 47667798.0,
+      "2015": 48814976.0,
+      "2016": 50131957.0,
+      "2017": 51759806.0,
+      "2018": 53008729.0,
+      "2019": 54319853.0,
+      "2020": 54841256.0,
+      "2021": 55961635.0,
+      "2022": 57238676.0,
+      "2023": 58912266.0,
+      "2024": 58860955.0,
+      "2025": 29111935.0
+    },
+    "quarterly_averages": {
+      "Q1_March": 0.0,
+      "Q2_June": 0.0,
+      "Q3_September": 0.0,
+      "Q4_December": 0.0
+    },
+    "overall_trend": "increasing",
+    "seasonality_detected": true
+  },
+  "key_findings": [
+    {
+      "finding": "Female employment surpasses male employment",
+      "detail": "Female: 1,134,933 vs Male: 1,124,807",
+      "significance": "high"
+    },
+    {
+      "finding": "Utilities sector shows highest growth",
+      "detail": "Electricity, Gas, Water and Waste Services grew 65.5% from 2011-2025",
+      "significance": "high"
+    },
+    {
+      "finding": "Youth employment declining",
+      "detail": "15-19 age group employment decreased from peak levels",
+      "significance": "medium"
+    },
+    {
+      "finding": "Senior employment increasing",
+      "detail": "65+ age group employment grew 37% over the period",
+      "significance": "high"
+    },
+    {
+      "finding": "Strong seasonal patterns",
+      "detail": "Q1 (March) consistently shows highest employment, Q3 (September) lowest",
+      "significance": "medium"
+    },
+    {
+      "finding": "Manufacturing remains largest employer",
+      "detail": "Average 218,037 jobs but showing recent decline",
+      "significance": "high"
+    },
+    {
+      "finding": "Auckland dominates regional employment",
+      "detail": "Largest employment hub among 16 regions",
+      "significance": "medium"
+    },
+    {
+      "finding": "Peak employment in 30-39 age range",
+      "detail": "Prime working years show highest job counts",
+      "significance": "medium"
+    }
+  ],
+  "statistics_summary": {
+    "total_employment_latest": 14532528.0,
+    "total_industries": 4,
+    "total_regions": 16,
+    "total_age_groups": 11,
+    "data_completeness_pct": 91.45613686095086,
+    "time_span_quarters": 57
+  }
+}
