@@ -1,0 +1,298 @@
+{
+  "structure": {
+    "total_rows": 20108,
+    "columns": [
+      "Series_reference",
+      "Period",
+      "Data_value",
+      "Suppressed",
+      "STATUS",
+      "UNITS",
+      "Magnitude",
+      "Subject",
+      "Group",
+      "Series_title_1",
+      "Series_title_2",
+      "Series_title_3",
+      "Series_title_4",
+      "Series_title_5"
+    ],
+    "column_analysis": {
+      "Series_reference": {
+        "total_values": 20108,
+        "unique_count": 370,
+        "null_count": 0,
+        "sample_values": [
+          "BDCQ.SED2RIT",
+          "BDCQ.SEE1059A",
+          "BDCQ.SED1RIS",
+          "BDCQ.SEE3034A",
+          "BDCQ.SEE2019A"
+        ]
+      },
+      "Period": {
+        "total_values": 20108,
+        "unique_count": 57,
+        "null_count": 0,
+        "sample_values": [
+          "2014.03",
+          "2016.09",
+          "2020.09",
+          "2023.03",
+          "2018.06"
+        ]
+      },
+      "Data_value": {
+        "total_values": 18390,
+        "unique_count": 16321,
+        "null_count": 1718,
+        "sample_values": [
+          "22457",
+          "2594",
+          "4009.165324",
+          "260479",
+          "20809"
+        ]
+      },
+      "Suppressed": {
+        "total_values": 1718,
+        "unique_count": 1,
+        "null_count": 18390,
+        "sample_values": [
+          "Y"
+        ]
+      },
+      "STATUS": {
+        "total_values": 20108,
+        "unique_count": 3,
+        "null_count": 0,
+        "sample_values": [
+          "F",
+          "R",
+          "C"
+        ]
+      },
+      "UNITS": {
+        "total_values": 20108,
+        "unique_count": 2,
+        "null_count": 0,
+        "sample_values": [
+          "Value",
+          "Number"
+        ]
+      },
+      "Magnitude": {
+        "total_values": 20108,
+        "unique_count": 2,
+        "null_count": 0,
+        "sample_values": [
+          "0",
+          "6"
+        ]
+      },
+      "Subject": {
+        "total_values": 20108,
+        "unique_count": 1,
+        "null_count": 0,
+        "sample_values": [
+          "Business Data Collection - BDC"
+        ]
+      },
+      "Group": {
+        "total_values": 20108,
+        "unique_count": 5,
+        "null_count": 0,
+        "sample_values": [
+          "Age by employment variable",
+          "Sex by employment variable",
+          "Territorial authority by employment variable",
+          "Region by employment variable",
+          "Industry by employment variable"
+        ]
+      },
+      "Series_title_1": {
+        "total_values": 20108,
+        "unique_count": 3,
+        "null_count": 0,
+        "sample_values": [
+          "Filled jobs",
+          "Total earnings",
+          "Filled jobs (workplace location based)"
+        ]
+      },
+      "Series_title_2": {
+        "total_values": 20108,
+        "unique_count": 106,
+        "null_count": 0,
+        "sample_values": [
+          "Kaikoura District",
+          "Male",
+          "Buller District",
+          "West Coast",
+          "Otorohanga District"
+        ]
+      },
+      "Series_title_3": {
+        "total_values": 20108,
+        "unique_count": 3,
+        "null_count": 0,
+        "sample_values": [
+          "Actual",
+          "Trend",
+          "Seasonally adjusted"
+        ]
+      },
+      "Series_title_4": {
+        "total_values": 0,
+        "unique_count": 0,
+        "null_count": 20108,
+        "sample_values": []
+      },
+      "Series_title_5": {
+        "total_values": 0,
+        "unique_count": 0,
+        "null_count": 20108,
+        "sample_values": []
+      }
+    }
+  },
+  "deep_analysis": {
+    "period_range": {
+      "min": "2011.06",
+      "max": "2025.06",
+      "count": 57
+    },
+    "industries": {
+      "Auckland": 534,
+      "Northland": 363,
+      "Waikato": 363,
+      "Bay of Plenty": 363,
+      "Gisborne": 363,
+      "Hawke's Bay": 363,
+      "Taranaki": 363,
+      "Manawatu-Whanganui": 363,
+      "Wellington": 363,
+      "Tasman": 363,
+      "Nelson": 363,
+      "Marlborough": 363,
+      "West Coast": 363,
+      "Canterbury": 363,
+      "Otago": 363,
+      "Southland": 363,
+      "Agriculture, Forestry and Fishing": 171,
+      "Mining": 171,
+      "Manufacturing": 171,
+      "Far North District": 171
+    },
+    "groups": {
+      "Industry by employment variable": 1330,
+      "Sex by employment variable": 228,
+      "Age by employment variable": 1254,
+      "Region by employment variable": 5808,
+      "Territorial authority by employment variable": 11488
+    },
+    "series_types": {
+      "Actual": 16219,
+      "Seasonally adjusted": 1948,
+      "Trend": 1941
+    },
+    "employment_variables": {
+      "Filled jobs": 7903,
+      "Total earnings": 7445,
+      "Filled jobs (workplace location based)": 4760
+    },
+    "value_statistics": {
+      "count": 18390,
+      "min": 1.171797,
+      "max": 1163117.0,
+      "mean": 53632.547852738666,
+      "median": 10953.5
+    },
+    "suppressed_data_count": 1718
+  },
+  "patterns": {
+    "industry_trends": {
+      "Agriculture, Forestry and Fishing": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 80078.0,
+        "last_value": 92128.0,
+        "absolute_change": 12050.0,
+        "percent_change": 15.05
+      },
+      "Mining": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 5234.0,
+        "last_value": 6106.0,
+        "absolute_change": 872.0,
+        "percent_change": 16.66
+      },
+      "Manufacturing": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 206633.0,
+        "last_value": 222420.0,
+        "absolute_change": 15787.0,
+        "percent_change": 7.64
+      },
+      "Electricity, Gas, Water and Waste Services": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 14486.0,
+        "last_value": 23678.0,
+        "absolute_change": 9192.0,
+        "percent_change": 63.45
+      },
+      "Education and Training": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 2194.27,
+        "last_value": 3938.57,
+        "absolute_change": 1744.3,
+        "percent_change": 79.49
+      },
+      "Health Care and Social Assistance": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 2217.71,
+        "last_value": 5976.45,
+        "absolute_change": 3758.74,
+        "percent_change": 169.49
+      },
+      "Arts and Recreation Services": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 329.95,
+        "last_value": 637.18,
+        "absolute_change": 307.23,
+        "percent_change": 93.12
+      },
+      "Other Services": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 530.62,
+        "last_value": 1177.24,
+        "absolute_change": 646.61,
+        "percent_change": 121.86
+      },
+      "Total Industry": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 20722.45,
+        "last_value": 45102.99,
+        "absolute_change": 24380.54,
+        "percent_change": 117.65
+      },
+      "Male": {
+        "first_period": "2011.06",
+        "last_period": "2025.06",
+        "first_value": 436803.41,
+        "last_value": 574965.66,
+        "absolute_change": 138162.25,
+        "percent_change": 31.63
+      }
+    },
+    "total_industries_analyzed": 104
+  }
+}

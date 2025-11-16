@@ -1,0 +1,537 @@
+{
+  "overview": {
+    "total_records": 20108,
+    "filled_jobs_records": 7903,
+    "earnings_records": 7445,
+    "data_types": {
+      "actual": 16219,
+      "seasonally_adjusted": 1948,
+      "trend": 1941
+    }
+  },
+  "by_industry": {
+    "Agriculture, Forestry and Fishing": {
+      "record_count": 57,
+      "average_value": 92909.23,
+      "period_count": 57
+    },
+    "Mining": {
+      "record_count": 57,
+      "average_value": 5504.49,
+      "period_count": 57
+    },
+    "Manufacturing": {
+      "record_count": 57,
+      "average_value": 218037.28,
+      "period_count": 57
+    },
+    "Electricity, Gas, Water and Waste Services": {
+      "record_count": 57,
+      "average_value": 18693.6,
+      "period_count": 57
+    },
+    "Education and Training": {
+      "record_count": 57,
+      "average_value": 2669.29,
+      "period_count": 57
+    },
+    "Health Care and Social Assistance": {
+      "record_count": 57,
+      "average_value": 3530.36,
+      "period_count": 57
+    },
+    "Arts and Recreation Services": {
+      "record_count": 57,
+      "average_value": 450.18,
+      "period_count": 57
+    },
+    "Other Services": {
+      "record_count": 57,
+      "average_value": 780.34,
+      "period_count": 57
+    },
+    "Total Industry": {
+      "record_count": 57,
+      "average_value": 31175.21,
+      "period_count": 57
+    },
+    "Male": {
+      "record_count": 114,
+      "average_value": 516993.4,
+      "period_count": 57
+    },
+    "Female": {
+      "record_count": 114,
+      "average_value": 509221.36,
+      "period_count": 57
+    },
+    "15-19": {
+      "record_count": 114,
+      "average_value": 57507.22,
+      "period_count": 57
+    },
+    "20-24": {
+      "record_count": 114,
+      "average_value": 111002.73,
+      "period_count": 57
+    },
+    "25-29": {
+      "record_count": 114,
+      "average_value": 121272.07,
+      "period_count": 57
+    },
+    "30-34": {
+      "record_count": 114,
+      "average_value": 115375.62,
+      "period_count": 57
+    },
+    "35-39": {
+      "record_count": 114,
+      "average_value": 106418.81,
+      "period_count": 57
+    },
+    "40-44": {
+      "record_count": 114,
+      "average_value": 105537.44,
+      "period_count": 57
+    },
+    "45-49": {
+      "record_count": 114,
+      "average_value": 105069.44,
+      "period_count": 57
+    },
+    "50-54": {
+      "record_count": 114,
+      "average_value": 100585.52,
+      "period_count": 57
+    },
+    "55-59": {
+      "record_count": 114,
+      "average_value": 86549.59,
+      "period_count": 57
+    },
+    "60-64": {
+      "record_count": 114,
+      "average_value": 66206.39,
+      "period_count": 57
+    },
+    "65 +": {
+      "record_count": 114,
+      "average_value": 47543.94,
+      "period_count": 57
+    },
+    "Northland": {
+      "record_count": 171,
+      "average_value": 39225.95,
+      "period_count": 57
+    },
+    "Auckland": {
+      "record_count": 342,
+      "average_value": 467388.39,
+      "period_count": 57
+    },
+    "Waikato": {
+      "record_count": 171,
+      "average_value": 122914.63,
+      "period_count": 57
+    },
+    "Bay of Plenty": {
+      "record_count": 171,
+      "average_value": 81251.51,
+      "period_count": 57
+    },
+    "Gisborne": {
+      "record_count": 171,
+      "average_value": 13035.37,
+      "period_count": 57
+    },
+    "Hawke's Bay": {
+      "record_count": 171,
+      "average_value": 46771.56,
+      "period_count": 57
+    },
+    "Taranaki": {
+      "record_count": 171,
+      "average_value": 32098.97,
+      "period_count": 57
+    },
+    "Manawatu-Whanganui": {
+      "record_count": 171,
+      "average_value": 64960.02,
+      "period_count": 57
+    },
+    "Wellington": {
+      "record_count": 171,
+      "average_value": 158170.91,
+      "period_count": 57
+    },
+    "Tasman": {
+      "record_count": 171,
+      "average_value": 12716.31,
+      "period_count": 57
+    },
+    "Nelson": {
+      "record_count": 171,
+      "average_value": 15170.37,
+      "period_count": 57
+    },
+    "Marlborough": {
+      "record_count": 171,
+      "average_value": 15124.24,
+      "period_count": 57
+    },
+    "West Coast": {
+      "record_count": 171,
+      "average_value": 9134.35,
+      "period_count": 57
+    },
+    "Canterbury": {
+      "record_count": 171,
+      "average_value": 182550.28,
+      "period_count": 57
+    },
+    "Otago": {
+      "record_count": 171,
+      "average_value": 67504.02,
+      "period_count": 57
+    },
+    "Southland": {
+      "record_count": 171,
+      "average_value": 29556.5,
+      "period_count": 57
+    },
+    "Far North District": {
+      "record_count": 171,
+      "average_value": 13283.97,
+      "period_count": 57
+    },
+    "Whangarei District": {
+      "record_count": 171,
+      "average_value": 21547.12,
+      "period_count": 57
+    },
+    "Kaipara District": {
+      "record_count": 171,
+      "average_value": 4395.92,
+      "period_count": 57
+    },
+    "Thames-Coromandel District": {
+      "record_count": 171,
+      "average_value": 5875.11,
+      "period_count": 57
+    },
+    "Hauraki District": {
+      "record_count": 171,
+      "average_value": 3905.67,
+      "period_count": 57
+    },
+    "Waikato District": {
+      "record_count": 171,
+      "average_value": 18785.86,
+      "period_count": 57
+    },
+    "Matamata-Piako District": {
+      "record_count": 171,
+      "average_value": 9183.42,
+      "period_count": 57
+    },
+    "Hamilton City": {
+      "record_count": 171,
+      "average_value": 49413.93,
+      "period_count": 57
+    },
+    "Waipa District": {
+      "record_count": 171,
+      "average_value": 13875.97,
+      "period_count": 57
+    },
+    "Otorohanga District": {
+      "record_count": 171,
+      "average_value": 2556.21,
+      "period_count": 57
+    },
+    "South Waikato District": {
+      "record_count": 171,
+      "average_value": 5943.19,
+      "period_count": 57
+    },
+    "Waitomo District": {
+      "record_count": 171,
+      "average_value": 2500.05,
+      "period_count": 57
+    },
+    "Taupo District": {
+      "record_count": 171,
+      "average_value": 9922.58,
+      "period_count": 57
+    },
+    "Western Bay of Plenty District": {
+      "record_count": 171,
+      "average_value": 13734.66,
+      "period_count": 57
+    },
+    "Tauranga City": {
+      "record_count": 171,
+      "average_value": 36568.57,
+      "period_count": 57
+    },
+    "Rotorua District": {
+      "record_count": 171,
+      "average_value": 19563.37,
+      "period_count": 57
+    },
+    "Whakatane District": {
+      "record_count": 171,
+      "average_value": 9067.6,
+      "period_count": 57
+    },
+    "Kawerau District": {
+      "record_count": 171,
+      "average_value": 1513.01,
+      "period_count": 57
+    },
+    "Opotiki District": {
+      "record_count": 171,
+      "average_value": 1964.6,
+      "period_count": 57
+    },
+    "Gisborne District": {
+      "record_count": 171,
+      "average_value": 13035.09,
+      "period_count": 57
+    },
+    "Wairoa District": {
+      "record_count": 171,
+      "average_value": 2126.34,
+      "period_count": 57
+    },
+    "Hastings District": {
+      "record_count": 171,
+      "average_value": 25129.37,
+      "period_count": 57
+    },
+    "Napier City": {
+      "record_count": 171,
+      "average_value": 15642.58,
+      "period_count": 57
+    },
+    "Central Hawke's Bay District": {
+      "record_count": 171,
+      "average_value": 3740.42,
+      "period_count": 57
+    },
+    "New Plymouth District": {
+      "record_count": 171,
+      "average_value": 22711.32,
+      "period_count": 57
+    },
+    "Stratford District": {
+      "record_count": 171,
+      "average_value": 1933.81,
+      "period_count": 57
+    },
+    "South Taranaki District": {
+      "record_count": 171,
+      "average_value": 7517.36,
+      "period_count": 57
+    },
+    "Ruapehu District": {
+      "record_count": 171,
+      "average_value": 3359.09,
+      "period_count": 57
+    },
+    "Whanganui District": {
+      "record_count": 171,
+      "average_value": 11493.84,
+      "period_count": 57
+    },
+    "Rangitikei District": {
+      "record_count": 171,
+      "average_value": 3733.05,
+      "period_count": 57
+    },
+    "Manawatu District": {
+      "record_count": 171,
+      "average_value": 8707.2,
+      "period_count": 57
+    },
+    "Palmerston North City": {
+      "record_count": 171,
+      "average_value": 26457.44,
+      "period_count": 57
+    },
+    "Tararua District": {
+      "record_count": 171,
+      "average_value": 4426.6,
+      "period_count": 57
+    },
+    "Horowhenua District": {
+      "record_count": 171,
+      "average_value": 6660.82,
+      "period_count": 57
+    },
+    "Kapiti Coast District": {
+      "record_count": 171,
+      "average_value": 10593.96,
+      "period_count": 57
+    },
+    "Porirua City": {
+      "record_count": 171,
+      "average_value": 13716.29,
+      "period_count": 57
+    },
+    "Upper Hutt City": {
+      "record_count": 171,
+      "average_value": 10610.68,
+      "period_count": 57
+    },
+    "Lower Hutt City": {
+      "record_count": 171,
+      "average_value": 29270.5,
+      "period_count": 57
+    },
+    "Wellington City": {
+      "record_count": 171,
+      "average_value": 82692.34,
+      "period_count": 57
+    },
+    "Masterton District": {
+      "record_count": 171,
+      "average_value": 6793.98,
+      "period_count": 57
+    },
+    "Carterton District": {
+      "record_count": 171,
+      "average_value": 2057.43,
+      "period_count": 57
+    },
+    "South Wairarapa District": {
+      "record_count": 171,
+      "average_value": 2405.41,
+      "period_count": 57
+    },
+    "Tasman District": {
+      "record_count": 171,
+      "average_value": 12715.47,
+      "period_count": 57
+    },
+    "Nelson City": {
+      "record_count": 171,
+      "average_value": 15171.72,
+      "period_count": 57
+    },
+    "Marlborough District": {
+      "record_count": 171,
+      "average_value": 15123.04,
+      "period_count": 57
+    },
+    "Kaikoura District": {
+      "record_count": 171,
+      "average_value": 870.94,
+      "period_count": 57
+    },
+    "Buller District": {
+      "record_count": 171,
+      "average_value": 2580.37,
+      "period_count": 57
+    },
+    "Grey District": {
+      "record_count": 171,
+      "average_value": 4046.64,
+      "period_count": 57
+    },
+    "Westland District": {
+      "record_count": 171,
+      "average_value": 2507.56,
+      "period_count": 57
+    },
+    "Hurunui District": {
+      "record_count": 171,
+      "average_value": 3164.68,
+      "period_count": 57
+    },
+    "Waimakariri District": {
+      "record_count": 171,
+      "average_value": 12238.08,
+      "period_count": 57
+    },
+    "Christchurch City": {
+      "record_count": 171,
+      "average_value": 123600.57,
+      "period_count": 57
+    },
+    "Selwyn District": {
+      "record_count": 171,
+      "average_value": 14856.91,
+      "period_count": 57
+    },
+    "Ashburton District": {
+      "record_count": 171,
+      "average_value": 9820.77,
+      "period_count": 57
+    },
+    "Timaru District": {
+      "record_count": 171,
+      "average_value": 14562.17,
+      "period_count": 57
+    },
+    "Mackenzie District": {
+      "record_count": 171,
+      "average_value": 1296.77,
+      "period_count": 57
+    },
+    "Waimate District": {
+      "record_count": 171,
+      "average_value": 1726.31,
+      "period_count": 57
+    },
+    "Chatham Islands Territory": {
+      "record_count": 171,
+      "average_value": 159.45,
+      "period_count": 57
+    },
+    "Waitaki District": {
+      "record_count": 171,
+      "average_value": 6388.75,
+      "period_count": 57
+    },
+    "Central Otago District": {
+      "record_count": 171,
+      "average_value": 6862.89,
+      "period_count": 57
+    },
+    "Queenstown-Lakes District": {
+      "record_count": 171,
+      "average_value": 13356.46,
+      "period_count": 57
+    },
+    "Dunedin City": {
+      "record_count": 171,
+      "average_value": 36391.29,
+      "period_count": 57
+    },
+    "Clutha District": {
+      "record_count": 171,
+      "average_value": 4892.6,
+      "period_count": 57
+    },
+    "Southland District": {
+      "record_count": 171,
+      "average_value": 8602.46,
+      "period_count": 57
+    },
+    "Gore District": {
+      "record_count": 171,
+      "average_value": 3794.45,
+      "period_count": 57
+    },
+    "Invercargill City": {
+      "record_count": 171,
+      "average_value": 17157.39,
+      "period_count": 57
+    }
+  },
+  "by_period": {},
+  "by_gender": {},
+  "by_age": {}
+}
