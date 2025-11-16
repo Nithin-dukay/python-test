@@ -1,0 +1,255 @@
+{
+  "phase": "3 - Statistical Analysis",
+  "timestamp": "2025-11-16T01:11:43.703712",
+  "industry_trends": [
+    {
+      "industry": "Agriculture, Forestry and Fishing",
+      "start_jobs": 80078.0,
+      "end_jobs": 92128.0,
+      "change": 12050.0,
+      "pct_change": 15.047828367341843
+    },
+    {
+      "industry": "Electricity, Gas, Water and Waste Services",
+      "start_jobs": 14486.0,
+      "end_jobs": 23678.0,
+      "change": 9192.0,
+      "pct_change": 63.45436973629711
+    },
+    {
+      "industry": "Manufacturing",
+      "start_jobs": 206633.0,
+      "end_jobs": 222420.0,
+      "change": 15787.0,
+      "pct_change": 7.640115567213368
+    },
+    {
+      "industry": "Mining",
+      "start_jobs": 5234.0,
+      "end_jobs": 6106.0,
+      "change": 872.0,
+      "pct_change": 16.660298051203668
+    }
+  ],
+  "regional_summary": [
+    {
+      "region": "Auckland",
+      "earliest": 558596.0,
+      "latest": 769959.0,
+      "change": 211363.0,
+      "pct_change": 37.83825877736325,
+      "average": 682062.9649122807
+    },
+    {
+      "region": "Bay of Plenty",
+      "earliest": 105806.0,
+      "latest": 143673.0,
+      "change": 37867.0,
+      "pct_change": 35.789085685121826,
+      "average": 123074.57894736843
+    },
+    {
+      "region": "Canterbury",
+      "earliest": 228177.0,
+      "latest": 302898.0,
+      "change": 74721.0,
+      "pct_change": 32.74694644946686,
+      "average": 271490.15789473685
+    },
+    {
+      "region": "Gisborne",
+      "earliest": 17907.0,
+      "latest": 21861.0,
+      "change": 3954.0,
+      "pct_change": 22.080750544479812,
+      "average": 20125.315789473683
+    },
+    {
+      "region": "Hawke's Bay",
+      "earliest": 64550.0,
+      "latest": 79104.0,
+      "change": 14554.0,
+      "pct_change": 22.546862896979086,
+      "average": 71040.71929824562
+    },
+    {
+      "region": "Manawatu-Whanganui",
+      "earliest": 91872.0,
+      "latest": 107443.0,
+      "change": 15571.0,
+      "pct_change": 16.948580633925463,
+      "average": 100154.19298245614
+    },
+    {
+      "region": "Marlborough",
+      "earliest": 21533.0,
+      "latest": 26786.0,
+      "change": 5253.0,
+      "pct_change": 24.395114475456275,
+      "average": 24224.19298245614
+    },
+    {
+      "region": "Nelson",
+      "earliest": 24138.0,
+      "latest": 19298.0,
+      "change": -4840.0,
+      "pct_change": -20.05137128179634,
+      "average": 21141.105263157893
+    },
+    {
+      "region": "Northland",
+      "earliest": 50234.0,
+      "latest": 71066.0,
+      "change": 20832.0,
+      "pct_change": 41.46992077079269,
+      "average": 61770.929824561405
+    },
+    {
+      "region": "Otago",
+      "earliest": 86809.0,
+      "latest": 112962.0,
+      "change": 26153.0,
+      "pct_change": 30.12706055823705,
+      "average": 100499.17543859649
+    },
+    {
+      "region": "Southland",
+      "earliest": 41186.0,
+      "latest": 46929.0,
+      "change": 5743.0,
+      "pct_change": 13.944058660709949,
+      "average": 44560.912280701756
+    },
+    {
+      "region": "Taranaki",
+      "earliest": 44794.0,
+      "latest": 52477.0,
+      "change": 7683.0,
+      "pct_change": 17.151850694289415,
+      "average": 49097.54385964912
+    },
+    {
+      "region": "Tasman",
+      "earliest": 12572.0,
+      "latest": 24624.0,
+      "change": 12052.0,
+      "pct_change": 95.86382437161947,
+      "average": 19311.140350877195
+    },
+    {
+      "region": "Waikato",
+      "earliest": 159196.0,
+      "latest": 219360.0,
+      "change": 60164.0,
+      "pct_change": 37.79240684439307,
+      "average": 190376.19298245615
+    },
+    {
+      "region": "Wellington",
+      "earliest": 205232.0,
+      "latest": 246835.0,
+      "change": 41603.0,
+      "pct_change": 20.271205270133315,
+      "average": 228059.80701754385
+    },
+    {
+      "region": "West Coast",
+      "earliest": 13941.0,
+      "latest": 14372.0,
+      "change": 431.0,
+      "pct_change": 3.0916003156158096,
+      "average": 14079.052631578947
+    }
+  ],
+  "age_group_trends": [
+    {
+      "age_group": "15-19",
+      "earliest": 98572.0,
+      "latest": 113927.0,
+      "change": 15355.0,
+      "pct_change": 15.577445927849693
+    },
+    {
+      "age_group": "20-24",
+      "earliest": 191834.0,
+      "latest": 214165.0,
+      "change": 22331.0,
+      "pct_change": 11.640793602802422
+    },
+    {
+      "age_group": "25-29",
+      "earliest": 184750.0,
+      "latest": 244477.0,
+      "change": 59727.0,
+      "pct_change": 32.32855209742896
+    },
+    {
+      "age_group": "30-34",
+      "earliest": 173195.0,
+      "latest": 278578.0,
+      "change": 105383.0,
+      "pct_change": 60.846444758797894
+    },
+    {
+      "age_group": "35-39",
+      "earliest": 186714.0,
+      "latest": 270882.0,
+      "change": 84168.0,
+      "pct_change": 45.078569362768725
+    },
+    {
+      "age_group": "40-44",
+      "earliest": 200611.0,
+      "latest": 239524.0,
+      "change": 38913.0,
+      "pct_change": 19.397241427439173
+    },
+    {
+      "age_group": "45-49",
+      "earliest": 200716.0,
+      "latest": 211645.0,
+      "change": 10929.0,
+      "pct_change": 5.445006875386118
+    },
+    {
+      "age_group": "50-54",
+      "earliest": 178833.0,
+      "latest": 208581.0,
+      "change": 29748.0,
+      "pct_change": 16.634513764238143
+    },
+    {
+      "age_group": "55-59",
+      "earliest": 140309.0,
+      "latest": 184468.0,
+      "change": 44159.0,
+      "pct_change": 31.472678160346096
+    },
+    {
+      "age_group": "60-64",
+      "earliest": 105985.0,
+      "latest": 157693.0,
+      "change": 51708.0,
+      "pct_change": 48.788036042836254
+    },
+    {
+      "age_group": "65 +",
+      "earliest": 61853.0,
+      "latest": 128988.0,
+      "change": 67135.0,
+      "pct_change": 108.53960195948457
+    }
+  ],
+  "gender_analysis": {
+    "Male": {
+      "start_jobs": 861368.0,
+      "end_jobs": 1124807.0,
+      "average": 1015876.947368421
+    },
+    "Female": {
+      "start_jobs": 865507.0,
+      "end_jobs": 1134933.0,
+      "average": 1005377.350877193
+    }
+  }
+}

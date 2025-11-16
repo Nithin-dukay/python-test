@@ -1,0 +1,155 @@
+{
+  "phase": "2 - Deep Analysis",
+  "timestamp": "2025-11-16T01:11:43.624244",
+  "group_breakdown": {
+    "Industry by employment variable": {
+      "record_count": 1330,
+      "unique_categories": 10,
+      "employment_variables": [
+        "Filled jobs",
+        "Total earnings"
+      ]
+    },
+    "Sex by employment variable": {
+      "record_count": 228,
+      "unique_categories": 2,
+      "employment_variables": [
+        "Filled jobs",
+        "Total earnings"
+      ]
+    },
+    "Age by employment variable": {
+      "record_count": 1254,
+      "unique_categories": 11,
+      "employment_variables": [
+        "Filled jobs",
+        "Total earnings"
+      ]
+    },
+    "Region by employment variable": {
+      "record_count": 5808,
+      "unique_categories": 16,
+      "employment_variables": [
+        "Filled jobs",
+        "Total earnings",
+        "Filled jobs (workplace location based)"
+      ]
+    },
+    "Territorial authority by employment variable": {
+      "record_count": 11488,
+      "unique_categories": 68,
+      "employment_variables": [
+        "Filled jobs",
+        "Total earnings",
+        "Filled jobs (workplace location based)"
+      ]
+    }
+  },
+  "industries": {
+    "total": 10,
+    "list": [
+      "Agriculture, Forestry and Fishing",
+      "Arts and Recreation Services",
+      "Education and Training",
+      "Electricity, Gas, Water and Waste Services",
+      "Health Care and Social Assistance",
+      "Manufacturing",
+      "Mining",
+      "Other Services",
+      "Public Administration and Safety",
+      "Total Industry"
+    ]
+  },
+  "age_groups": [
+    "15-19",
+    "20-24",
+    "25-29",
+    "30-34",
+    "35-39",
+    "40-44",
+    "45-49",
+    "50-54",
+    "55-59",
+    "60-64",
+    "65 +"
+  ],
+  "sex_categories": [
+    "Male",
+    "Female"
+  ],
+  "regions": {
+    "total": 16,
+    "list": [
+      "Auckland",
+      "Bay of Plenty",
+      "Canterbury",
+      "Gisborne",
+      "Hawke's Bay",
+      "Manawatu-Whanganui",
+      "Marlborough",
+      "Nelson",
+      "Northland",
+      "Otago",
+      "Southland",
+      "Taranaki",
+      "Tasman",
+      "Waikato",
+      "Wellington",
+      "West Coast"
+    ]
+  },
+  "territorial_authorities": {
+    "total": 68,
+    "top_20": {
+      "Far North District": 171,
+      "Whangarei District": 171,
+      "Kaipara District": 171,
+      "Thames-Coromandel District": 171,
+      "Hauraki District": 171,
+      "Waikato District": 171,
+      "Matamata-Piako District": 171,
+      "Hamilton City": 171,
+      "Waipa District": 171,
+      "Otorohanga District": 171,
+      "South Waikato District": 171,
+      "Waitomo District": 171,
+      "Taupo District": 171,
+      "Western Bay of Plenty District": 171,
+      "Tauranga City": 171,
+      "Rotorua District": 171,
+      "Whakatane District": 171,
+      "Kawerau District": 171,
+      "Opotiki District": 171,
+      "Gisborne District": 171
+    }
+  },
+  "time_series": {
+    "years": {
+      "2011": 1101,
+      "2012": 1470,
+      "2013": 1468,
+      "2014": 1468,
+      "2015": 1468,
+      "2016": 1468,
+      "2017": 1468,
+      "2018": 1468,
+      "2019": 1468,
+      "2020": 1465,
+      "2021": 1288,
+      "2022": 1288,
+      "2023": 1288,
+      "2024": 1288,
+      "2025": 644
+    },
+    "quarters": {
+      "Q2": 4913,
+      "Q5": 5279,
+      "Q8": 4959,
+      "Q11": 4957
+    }
+  },
+  "magnitude_distribution": {
+    "0": 12663,
+    "6": 7445
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "phase": "1 - Data Discovery",
+  "timestamp": "2025-11-16T01:11:43.557288",
+  "dataset_info": {
+    "total_records": 20108,
+    "columns": 15,
+    "file_size_mb": 2.97,
+    "period_range": {
+      "earliest": 2011.06,
+      "latest": 2025.06,
+      "span_years": 14.0,
+      "unique_periods": 57
+    }
+  },
+  "data_quality": {
+    "suppressed_records": 1718,
+    "records_with_values": 18390,
+    "missing_data_value": 1718
+  },
+  "categories": {
+    "groups": {
+      "Territorial authority by employment variable": 11488,
+      "Region by employment variable": 5808,
+      "Industry by employment variable": 1330,
+      "Age by employment variable": 1254,
+      "Sex by employment variable": 228
+    },
+    "employment_variables": {
+      "Filled jobs": 7903,
+      "Total earnings": 7445,
+      "Filled jobs (workplace location based)": 4760
+    },
+    "data_types": {
+      "Actual": 16219,
+      "Seasonally adjusted": 1948,
+      "Trend": 1941
+    },
+    "status_codes": {
+      "F": 16317,
+      "R": 2855,
+      "C": 936
+    },
+    "units": {
+      "Number": 12663,
+      "Value": 7445
+    }
+  },
+  "top_categories": {
+    "industries": {
+      "Auckland": 534,
+      "Tasman": 363,
+      "Marlborough": 363,
+      "West Coast": 363,
+      "Canterbury": 363,
+      "Otago": 363,
+      "Southland": 363,
+      "Waikato": 363,
+      "Northland": 363,
+      "Nelson": 363,
+      "Taranaki": 363,
+      "Hawke's Bay": 363,
+      "Wellington": 363,
+      "Manawatu-Whanganui": 363,
+      "Gisborne": 363,
+      "Bay of Plenty": 363,
+      "Whangarei District": 171,
+      "Far North District": 171,
+      "Mining": 171,
+      "Agriculture, Forestry and Fishing": 171
+    },
+    "series_references": {
+      "BDCQ.SEE3076A": 57,
+      "BDCQ.SEA1AA": 57,
+      "BDCQ.SEA1AS": 57,
+      "BDCQ.SEA1AT": 57,
+      "BDCQ.SEA1BA": 57,
+      "BDCQ.SEA1BS": 57,
+      "BDCQ.SEA1BT": 57,
+      "BDCQ.SEA1CA": 57,
+      "BDCQ.SEA1CS": 57,
+      "BDCQ.SEA1CT": 57,
+      "BDCQ.SEA1DA": 57,
+      "BDCQ.SEE3075A": 57,
+      "BDCQ.SEE3074A": 57,
+      "BDCQ.SEE3073A": 57,
+      "BDCQ.SEE3033A": 57,
+      "BDCQ.SEE3034A": 57,
+      "BDCQ.SEE3035A": 57,
+      "BDCQ.SEE3036A": 57,
+      "BDCQ.SEE3037A": 57,
+      "BDCQ.SEE3038A": 57
+    }
+  }
+}
