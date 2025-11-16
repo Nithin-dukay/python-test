@@ -1,0 +1,89 @@
+{
+  "key_metrics": {
+    "total_sales": 2297200.8603000003,
+    "total_profit": 286397.0216999999,
+    "profit_margin_pct": 12.4672172403156,
+    "total_orders": 5009,
+    "total_customers": 793,
+    "avg_order_value": 458.61466566180883,
+    "return_rate_pct": 8.004802881729036
+  },
+  "category_performance": {
+    "Sales": {
+      "Technology": 836154.03,
+      "Furniture": 741999.8,
+      "Office Supplies": 719047.03
+    },
+    "Profit": {
+      "Technology": 145454.95,
+      "Furniture": 18451.27,
+      "Office Supplies": 122490.8
+    },
+    "Order ID": {
+      "Technology": 1847,
+      "Furniture": 2121,
+      "Office Supplies": 6026
+    },
+    "Profit_Margin_%": {
+      "Technology": 17.4,
+      "Furniture": 2.49,
+      "Office Supplies": 17.04
+    }
+  },
+  "region_performance": {
+    "Sales": {
+      "West": 725457.82,
+      "East": 678781.24,
+      "Central": 501239.89,
+      "South": 391721.9
+    },
+    "Profit": {
+      "West": 108418.45,
+      "East": 91522.78,
+      "Central": 39706.36,
+      "South": 46749.43
+    },
+    "Order ID": {
+      "West": 3203,
+      "East": 2848,
+      "Central": 2323,
+      "South": 1620
+    },
+    "Profit_Margin_%": {
+      "West": 14.94,
+      "East": 13.48,
+      "Central": 7.92,
+      "South": 11.93
+    }
+  },
+  "segment_performance": {
+    "Sales": {
+      "Consumer": 1161401.34,
+      "Corporate": 706146.37,
+      "Home Office": 429653.15
+    },
+    "Profit": {
+      "Consumer": 134119.21,
+      "Corporate": 91979.13,
+      "Home Office": 60298.68
+    },
+    "Order ID": {
+      "Consumer": 5191,
+      "Corporate": 3020,
+      "Home Office": 1783
+    },
+    "Profit_Margin_%": {
+      "Consumer": 11.55,
+      "Corporate": 13.03,
+      "Home Office": 14.03
+    }
+  },
+  "profitability": {
+    "profitable_orders": 8058,
+    "unprofitable_orders": 1871,
+    "breakeven_orders": 65
+  },
+  "shipping": {
+    "avg_shipping_days": 3.958174904942966
+  }
+}

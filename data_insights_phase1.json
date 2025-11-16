@@ -1,0 +1,38 @@
+{
+  "dataset_info": {
+    "total_orders": 9994,
+    "total_returns": 296,
+    "total_people": 4,
+    "date_range": {
+      "start": "2014-01-03 00:00:00",
+      "end": "2017-12-30 00:00:00"
+    },
+    "columns": [
+      "Row ID",
+      "Order ID",
+      "Order Date",
+      "Ship Date",
+      "Ship Mode",
+      "Customer ID",
+      "Customer Name",
+      "Segment",
+      "Country",
+      "City",
+      "State",
+      "Postal Code",
+      "Region",
+      "Product ID",
+      "Category",
+      "Sub-Category",
+      "Product Name",
+      "Sales",
+      "Quantity",
+      "Discount",
+      "Profit"
+    ]
+  },
+  "data_quality": {
+    "missing_values": 0,
+    "duplicate_rows": 0
+  }
+}
