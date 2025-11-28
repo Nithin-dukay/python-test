@@ -1,0 +1,16 @@
+[
+  {
+    "id": "78f28cf2-e0b9-4371-a616-acf6ae5d2a3e",
+    "title": "UntitleMy First Noted Note",
+    "content": "This is my first note in the notes app. I can write anything here and it will be saved to the database. The app supports creating, editing, and deleting notes with a beautiful modern interface.",
+    "created_at": "2025-11-28T02:02:13.343188",
+    "updated_at": "2025-11-28T02:03:20.955533"
+  },
+  {
+    "id": "f2bc81ad-ba8e-48c6-bbfb-bbeb76025874",
+    "title": "UntitleShopping Listd Note",
+    "content": "- Milk\n- Eggs\n- Bread\n- Butter\n- Coffee\n- Fruits (apples, bananas)\n- Vegetables (carrots, broccoli)",
+    "created_at": "2025-11-28T02:03:35.293218",
+    "updated_at": "2025-11-28T02:04:51.273104"
+  }
+]
