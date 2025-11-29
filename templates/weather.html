@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block title %}{{ weather.city }} Weather - Weather Info App{% endblock %}
+
+{% block content %}
+<div class="weather-section">
+    <div class="container">
+        <!-- Back Button -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <a href="{{ url_for('index') }}" class="btn btn-outline-secondary btn-sm">
+                    ← Back to Search
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Weather Card -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-8">
+                <div class="weather-main-card">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <h2 class="city-name mb-1">{{ weather.city }}, {{ weather.country }}</h2>
+                            <p class="text-muted mb-3">{{ weather.timestamp }}</p>
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+                                <img src="{{ weather.icon_url }}" alt="{{ weather.description }}" class="weather-icon-large">
+                                <div>
+                                    <h1 class="temperature-display mb-0" data-celsius="{{ weather.temp_celsius }}" data-fahrenheit="{{ weather.temp_fahrenheit }}">
+                                        {{ weather.temp_celsius }}°C
+                                    </h1>
+                                    <p class="text-muted mb-0">Feels like <span class="feels-like" data-celsius="{{ weather.feels_like_celsius }}" data-fahrenheit="{{ weather.feels_like_fahrenheit }}">{{ weather.feels_like_celsius }}°C</span></p>
+                                </div>
+                            </div>
+                            <h5 class="weather-description">{{ weather.description }}</h5>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="weather-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">High / Low</span>
+                                    <span class="detail-value">{{ weather.temp_max_celsius }}° / {{ weather.temp_min_celsius }}°</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Humidity</span>
+                                    <span class="detail-value">{{ weather.humidity }}%</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Pressure</span>
+                                    <span class="detail-value">{{ weather.pressure }} hPa</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Cloudiness</span>
+                                    <span class="detail-value">{{ weather.cloudiness }}%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Unit Toggle -->
+                    <div class="text-center mt-3">
+                        <button class="btn btn-sm btn-outline-primary" id="unitToggle">
+                            Switch to °F
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Info Cards -->
+        <div class="row g-4">
+            <!-- Wind Card -->
+            <div class="col-md-4">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <span class="info-icon">💨</span>
+                        <h6 class="mb-0">Wind</h6>
+                    </div>
+                    <div class="info-card-body">
+                        <div class="info-item">
+                            <span class="info-label">Speed</span>
+                            <span class="info-value">{{ weather.wind_speed }} m/s</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Direction</span>
+                            <span class="info-value">{{ weather.wind_direction }} ({{ weather.wind_deg }}°)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sun Card -->
+            <div class="col-md-4">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <span class="info-icon">🌅</span>
+                        <h6 class="mb-0">Sun</h6>
+                    </div>
+                    <div class="info-card-body">
+                        <div class="info-item">
+                            <span class="info-label">Sunrise</span>
+                            <span class="info-value">{{ weather.sunrise }}</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Sunset</span>
+                            <span class="info-value">{{ weather.sunset }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visibility Card -->
+            <div class="col-md-4">
+                <div class="info-card">
+                    <div class="info-card-header">
+                        <span class="info-icon">👁️</span>
+                        <h6 class="mb-0">Visibility</h6>
+                    </div>
+                    <div class="info-card-body">
+                        <div class="info-item">
+                            <span class="info-label">Distance</span>
+                            <span class="info-value">{{ weather.visibility }} km</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Condition</span>
+                            <span class="info-value">{{ weather.main }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Another City -->
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="search-another-card">
+                    <h5 class="text-center mb-3">Search Another City</h5>
+                    <form action="{{ url_for('weather') }}" method="POST">
+                        <div class="input-group">
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                name="city" 
+                                placeholder="Enter city name" 
+                                required
+                                maxlength="100"
+                            >
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Unit conversion toggle
+    let isCelsius = true;
+    const unitToggle = document.getElementById('unitToggle');
+    const tempDisplay = document.querySelector('.temperature-display');
+    const feelsLike = document.querySelector('.feels-like');
+
+    unitToggle.addEventListener('click', function() {
+        isCelsius = !isCelsius;
+        
+        if (isCelsius) {
+            tempDisplay.textContent = tempDisplay.dataset.celsius + '°C';
+            feelsLike.textContent = feelsLike.dataset.celsius + '°C';
+            unitToggle.textContent = 'Switch to °F';
+        } else {
+            tempDisplay.textContent = tempDisplay.dataset.fahrenheit + '°F';
+            feelsLike.textContent = feelsLike.dataset.fahrenheit + '°F';
+            unitToggle.textContent = 'Switch to °C';
+        }
+    });
+</script>
+{% endblock %}

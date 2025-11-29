@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block title %}About - Weather Info App{% endblock %}
+
+{% block content %}
+<div class="about-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="about-card">
+                    <h1 class="text-center mb-4">About Weather Info App</h1>
+                    
+                    <div class="about-content">
+                        <section class="mb-4">
+                            <h4>Overview</h4>
+                            <p>Weather Info App is a comprehensive web application built with Flask that provides real-time weather information for cities worldwide. Get instant access to current weather conditions, temperature, humidity, wind speed, and much more.</p>
+                        </section>
+
+                        <section class="mb-4">
+                            <h4>Features</h4>
+                            <ul class="feature-list">
+                                <li>🌡️ <strong>Real-time Weather Data:</strong> Current temperature with feels-like information</li>
+                                <li>💨 <strong>Wind Information:</strong> Wind speed and direction details</li>
+                                <li>💧 <strong>Humidity & Pressure:</strong> Atmospheric pressure and humidity levels</li>
+                                <li>🌅 <strong>Sunrise & Sunset:</strong> Accurate sunrise and sunset times</li>
+                                <li>👁️ <strong>Visibility:</strong> Current visibility conditions</li>
+                                <li>🔄 <strong>Unit Conversion:</strong> Toggle between Celsius and Fahrenheit</li>
+                                <li>📱 <strong>Responsive Design:</strong> Works seamlessly on all devices</li>
+                                <li>⚡ <strong>Fast & Cached:</strong> Optimized performance with data caching</li>
+                                <li>🔌 <strong>API Endpoint:</strong> JSON API for developers</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-4">
+                            <h4>Technology Stack</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="tech-item">
+                                        <strong>Backend:</strong>
+                                        <ul class="mb-0">
+                                            <li>Python 3</li>
+                                            <li>Flask Web Framework</li>
+                                            <li>Flask-Caching</li>
+                                            <li>Requests Library</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="tech-item">
+                                        <strong>Frontend:</strong>
+                                        <ul class="mb-0">
+                                            <li>HTML5 & CSS3</li>
+                                            <li>Bootstrap 5</li>
+                                            <li>JavaScript (ES6+)</li>
+                                            <li>Responsive Design</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="mb-4">
+                            <h4>API Integration</h4>
+                            <p>This application uses the <a href="https://openweathermap.org/" target="_blank" class="text-decoration-none">OpenWeatherMap API</a> to fetch real-time weather data. The API provides comprehensive weather information including:</p>
+                            <ul>
+                                <li>Current weather conditions</li>
+                                <li>Temperature and feels-like temperature</li>
+                                <li>Atmospheric pressure and humidity</li>
+                                <li>Wind speed and direction</li>
+                                <li>Cloudiness and visibility</li>
+                                <li>Sunrise and sunset times</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-4">
+                            <h4>API Endpoints</h4>
+                            <div class="api-docs">
+                                <div class="api-endpoint">
+                                    <code class="d-block mb-2">GET /api/weather/&lt;city&gt;</code>
+                                    <p class="small text-muted mb-2">Get weather data in JSON format for a specific city.</p>
+                                    <p class="small mb-1"><strong>Example:</strong></p>
+                                    <code class="d-block small">GET /api/weather/London</code>
+                                    <p class="small text-muted mt-2 mb-1"><strong>Response:</strong></p>
+                                    <pre class="small bg-light p-2 rounded"><code>{
+  "success": true,
+  "data": {
+    "city": "London",
+    "country": "GB",
+    "temp_celsius": 15.5,
+    "temp_fahrenheit": 59.9,
+    "humidity": 72,
+    "description": "Partly cloudy",
+    ...
+  }
+}</code></pre>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="mb-4">
+                            <h4>Performance & Caching</h4>
+                            <p>To optimize performance and reduce API calls, weather data is cached for 10 minutes per city. This ensures fast response times while staying within API rate limits.</p>
+                        </section>
+
+                        <section class="mb-4">
+                            <h4>Error Handling</h4>
+                            <p>The application includes comprehensive error handling for:</p>
+                            <ul>
+                                <li>Invalid city names</li>
+                                <li>API connection errors</li>
+                                <li>Rate limit exceeded</li>
+                                <li>Network timeouts</li>
+                                <li>Missing API configuration</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-4">
+                            <h4>Privacy & Security</h4>
+                            <p>This application does not collect, store, or share any personal information. All weather data is fetched directly from the OpenWeatherMap API and cached temporarily for performance optimization.</p>
+                        </section>
+
+                        <section class="text-center mt-5">
+                            <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg">Start Searching Weather</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
