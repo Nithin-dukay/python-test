@@ -1,0 +1,20 @@
+app:
+  name: Python Test App
+  version: 1.0.0
+  host: 0.0.0.0
+  port: 5000
+  debug: true
+logging:
+  level: INFO
+  directory: logs
+  max_file_size_mb: 10
+  backup_count: 5
+connectivity:
+  timeout: 10
+  targets:
+  - https://www.google.com
+  - https://www.bing.com
+selenium:
+  headless: false
+  window_size: 1920x1080
+  timeout: 10
