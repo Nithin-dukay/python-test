@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Weather in {{ weather.city }} - Weather App{% endblock %}
+
+{% block content %}
+<div class="weather-results-section">
+    <div class="container py-5">
+        <!-- Back Button -->
+        <div class="mb-4">
+            <a href="/" class="btn btn-outline-primary">
+                ← Back to Search
+            </a>
+        </div>
+
+        <!-- Current Weather Card -->
+        <div class="weather-card mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img 
+                        src="https://openweathermap.org/img/wn/{{ weather.icon }}@4x.png" 
+                        alt="{{ weather.description }}"
+                        class="weather-icon-large"
+                    >
+                    <h2 class="fw-bold mb-0">{{ weather.temperature_celsius }}°C</h2>
+                    <p class="text-muted mb-0">{{ weather.temperature_fahrenheit }}°F</p>
+                </div>
+                <div class="col-md-8">
+                    <h1 class="fw-bold mb-2">{{ weather.city }}, {{ weather.country }}</h1>
+                    <h4 class="text-primary mb-3">{{ weather.description }}</h4>
+                    <p class="text-muted mb-2">
+                        <strong>Feels like:</strong> 
+                        {{ weather.feels_like_celsius }}°C / {{ weather.feels_like_fahrenheit }}°F
+                    </p>
+                    <p class="text-muted mb-0">
+                        <small>Last updated: {{ weather.timestamp }}</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weather Details Grid -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="detail-card">
+                    <div class="detail-icon">💧</div>
+                    <h6 class="text-muted mb-1">Humidity</h6>
+                    <h4 class="fw-bold mb-0">{{ weather.humidity }}%</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="detail-card">
+                    <div class="detail-icon">💨</div>
+                    <h6 class="text-muted mb-1">Wind Speed</h6>
+                    <h4 class="fw-bold mb-0">{{ weather.wind_speed }} m/s</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="detail-card">
+                    <div class="detail-icon">🌫️</div>
+                    <h6 class="text-muted mb-1">Visibility</h6>
+                    <h4 class="fw-bold mb-0">{{ weather.visibility }} km</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="detail-card">
+                    <div class="detail-icon">🌡️</div>
+                    <h6 class="text-muted mb-1">Pressure</h6>
+                    <h4 class="fw-bold mb-0">{{ weather.pressure }} hPa</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Details -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="detail-card">
+                    <div class="detail-icon">☁️</div>
+                    <h6 class="text-muted mb-1">Cloudiness</h6>
+                    <h4 class="fw-bold mb-0">{{ weather.clouds }}%</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="detail-card">
+                    <div class="detail-icon">🌅</div>
+                    <h6 class="text-muted mb-1">Sunrise</h6>
+                    <h4 class="fw-bold mb-0">{{ weather.sunrise }}</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="detail-card">
+                    <div class="detail-icon">🌇</div>
+                    <h6 class="text-muted mb-1">Sunset</h6>
+                    <h4 class="fw-bold mb-0">{{ weather.sunset }}</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5-Day Forecast -->
+        {% if forecast %}
+        <div class="forecast-section">
+            <h3 class="fw-bold mb-4">5-Day Forecast</h3>
+            <div class="row g-3">
+                {% for day in forecast %}
+                <div class="col-md-2 col-sm-4 col-6">
+                    <div class="forecast-card text-center">
+                        <p class="fw-bold mb-2">{{ day.date }}</p>
+                        <img 
+                            src="https://openweathermap.org/img/wn/{{ day.icon }}@2x.png" 
+                            alt="{{ day.description }}"
+                            class="forecast-icon"
+                        >
+                        <p class="fw-bold mb-1">{{ day.temp_celsius }}°C</p>
+                        <p class="small text-muted mb-0">{{ day.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Search Again -->
+        <div class="text-center mt-5">
+            <h4 class="mb-3">Search Another City</h4>
+            <form action="/weather" method="POST" class="d-inline-block" style="max-width: 500px; width: 100%;">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        name="city" 
+                        placeholder="Enter city name" 
+                        required
+                        pattern="[A-Za-z\s\-]+"
+                    >
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
