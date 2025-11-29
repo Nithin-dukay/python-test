@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather - {{ weather.city }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card weather-result">
+            <div class="back-button">
+                <a href="/" class="btn-back">← Back to Search</a>
+            </div>
+
+            <div class="location-header">
+                <h1>{{ weather.city }}</h1>
+                {% if weather.region %}
+                <p class="location-details">{{ weather.region }}, {{ weather.country }}</p>
+                {% else %}
+                <p class="location-details">{{ weather.country }}</p>
+                {% endif %}
+                <p class="local-time">{{ weather.local_time }}</p>
+            </div>
+
+            <div class="weather-main">
+                <div class="weather-icon">{{ weather.emoji }}</div>
+                <div class="temperature">
+                    <span class="temp-value">{{ weather.temperature_c }}°C</span>
+                    <span class="temp-alt">{{ weather.temperature_f }}°F</span>
+                </div>
+                <div class="condition">{{ weather.condition }}</div>
+                <div class="feels-like">
+                    Feels like {{ weather.feels_like_c }}°C ({{ weather.feels_like_f }}°F)
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <div class="detail-icon">💧</div>
+                        <div class="detail-content">
+                            <div class="detail-label">Humidity</div>
+                            <div class="detail-value">{{ weather.humidity }}%</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">💨</div>
+                        <div class="detail-content">
+                            <div class="detail-label">Wind Speed</div>
+                            <div class="detail-value">{{ weather.wind_kph }} km/h</div>
+                            <div class="detail-sub">({{ weather.wind_mph }} mph)</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">🧭</div>
+                        <div class="detail-content">
+                            <div class="detail-label">Wind Direction</div>
+                            <div class="detail-value">{{ weather.wind_direction }}</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">🔆</div>
+                        <div class="detail-content">
+                            <div class="detail-label">UV Index</div>
+                            <div class="detail-value">{{ weather.uv_index }}</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">👁️</div>
+                        <div class="detail-content">
+                            <div class="detail-label">Visibility</div>
+                            <div class="detail-value">{{ weather.visibility_km }} km</div>
+                            <div class="detail-sub">({{ weather.visibility_miles }} mi)</div>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">🌡️</div>
+                        <div class="detail-content">
+                            <div class="detail-label">Pressure</div>
+                            <div class="detail-value">{{ weather.pressure_mb }} mb</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-again">
+                <form method="POST" action="/weather" class="inline-search-form">
+                    <input 
+                        type="text" 
+                        name="city" 
+                        placeholder="Search another city..."
+                        required
+                    >
+                    <button type="submit" class="btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="header">
+                <h1>🌤️ Weather App</h1>
+                <p class="subtitle">Get current weather information for any city</p>
+            </div>
+
+            {% if error %}
+            <div class="error-message">
+                <span class="error-icon">⚠️</span>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+
+            <form method="POST" action="/weather" class="search-form">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        name="city" 
+                        id="city" 
+                        placeholder="Enter city name (e.g., London, New York, Tokyo)"
+                        required
+                        autofocus
+                    >
+                    <button type="submit" class="btn-primary">
+                        <span>Search</span>
+                        <span class="icon">🔍</span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="examples">
+                <p class="examples-title">Try these cities:</p>
+                <div class="example-buttons">
+                    <button class="btn-example" onclick="searchCity('London')">London</button>
+                    <button class="btn-example" onclick="searchCity('New York')">New York</button>
+                    <button class="btn-example" onclick="searchCity('Tokyo')">Tokyo</button>
+                    <button class="btn-example" onclick="searchCity('Paris')">Paris</button>
+                    <button class="btn-example" onclick="searchCity('Sydney')">Sydney</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Powered by WeatherAPI.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
