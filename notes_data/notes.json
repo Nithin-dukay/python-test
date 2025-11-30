@@ -1,0 +1,48 @@
+{
+  "29a3281e-9c66-463a-86bb-5743f2fb3e42": {
+    "id": "29a3281e-9c66-463a-86bb-5743f2fb3e42",
+    "title": "Python Best Practices",
+    "content": "Always use virtual environments\nFollow PEP 8 style guide\nWrite docstrings for functions\nUse type hints for better code clarity",
+    "tags": [
+      "python",
+      "programming",
+      "best-practices"
+    ],
+    "created_at": "2025-11-30T18:44:26.472679",
+    "updated_at": "2025-11-30T18:44:26.472686"
+  },
+  "13047c47-79fc-4caf-bb2c-59ee3839dfe2": {
+    "id": "13047c47-79fc-4caf-bb2c-59ee3839dfe2",
+    "title": "Project Ideas",
+    "content": "Build a task manager app\nCreate a weather dashboard\nDevelop a personal blog\nMake a recipe organizer",
+    "tags": [
+      "ideas",
+      "projects"
+    ],
+    "created_at": "2025-11-30T18:44:26.472886",
+    "updated_at": "2025-11-30T18:44:26.472890"
+  },
+  "a56d080b-7485-440c-ac47-deeddcb5e2a0": {
+    "id": "a56d080b-7485-440c-ac47-deeddcb5e2a0",
+    "title": "Meeting Notes - Nov 30",
+    "content": "Discussed Q4 goals\nReviewed project timeline\nAssigned tasks to team members\nNext meeting: Dec 7",
+    "tags": [
+      "work",
+      "meetings"
+    ],
+    "created_at": "2025-11-30T18:44:26.472992",
+    "updated_at": "2025-11-30T18:44:26.472995"
+  },
+  "458fa38a-9191-4f6f-8b89-ecf9b5651637": {
+    "id": "458fa38a-9191-4f6f-8b89-ecf9b5651637",
+    "title": "Book Recommendations",
+    "content": "Clean Code by Robert Martin\nThe Pragmatic Programmer\nDesign Patterns: Elements of Reusable Object-Oriented Software",
+    "tags": [
+      "books",
+      "learning",
+      "programming"
+    ],
+    "created_at": "2025-11-30T18:44:26.473181",
+    "updated_at": "2025-11-30T18:44:26.473184"
+  }
+}

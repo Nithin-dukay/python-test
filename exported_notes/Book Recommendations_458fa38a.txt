@@ -1,0 +1,10 @@
+Title: Book Recommendations
+Created: 2025-11-30T18:44:26.473181
+Updated: 2025-11-30T18:44:26.473184
+Tags: books, learning, programming
+
+============================================================
+
+Clean Code by Robert Martin
+The Pragmatic Programmer
+Design Patterns: Elements of Reusable Object-Oriented Software
