@@ -1,0 +1,88 @@
+{
+  "notes": [
+    {
+      "id": "3fe9c9c8-41cc-4d20-a98e-e3143d379647",
+      "title": "Welcome to Notes App",
+      "content": "Welcome to your new note-taking application!\n\nThis app helps you organize your thoughts, ideas, and information efficiently.\n\nKey Features:\n- Create and edit notes easily\n- Search across all your notes\n- Organize with tags\n- Export notes to text files\n- Automatic timestamps\n\nGet started by creating your first note!",
+      "tags": [
+        "welcome",
+        "tutorial"
+      ],
+      "created_at": "2025-11-30T18:33:39.183426",
+      "modified_at": "2025-11-30T18:33:39.183426"
+    },
+    {
+      "id": "b358c011-8da7-4740-9fab-8113f32a72eb",
+      "title": "Python Tips",
+      "content": "Useful Python Tips:\n\n1. Use list comprehensions for cleaner code\n2. F-strings are the best way to format strings\n3. Use 'with' statements for file operations\n4. Virtual environments keep dependencies isolated\n5. Type hints improve code readability\n\nRemember: \"Readability counts\" - The Zen of Python",
+      "tags": [
+        "python",
+        "programming",
+        "tips"
+      ],
+      "created_at": "2025-11-30T18:33:39.183550",
+      "modified_at": "2025-11-30T18:33:39.183550"
+    },
+    {
+      "id": "303e982c-ae76-41d3-aa29-6ebcc932df56",
+      "title": "Project Ideas",
+      "content": "Ideas for future projects:\n\n1. Web scraper for news articles\n2. Personal finance tracker\n3. Habit tracking app\n4. Recipe organizer\n5. Workout planner\n6. Book reading list manager\n\nPick one and start building!",
+      "tags": [
+        "ideas",
+        "projects",
+        "todo"
+      ],
+      "created_at": "2025-11-30T18:33:39.184045",
+      "modified_at": "2025-11-30T18:33:39.184045"
+    },
+    {
+      "id": "a9cd261f-5f26-40db-acd9-59ff69eac137",
+      "title": "Meeting Notes - Nov 30",
+      "content": "Team Meeting Notes:\n\nAttendees: Alice, Bob, Charlie\n\nDiscussion Points:\n- Q4 goals review\n- New feature proposals\n- Timeline for next release\n- Resource allocation\n\nAction Items:\n- Alice: Prepare design mockups\n- Bob: Review technical requirements\n- Charlie: Update project timeline\n\nNext meeting: Dec 7",
+      "tags": [
+        "meeting",
+        "work",
+        "notes"
+      ],
+      "created_at": "2025-11-30T18:33:39.184327",
+      "modified_at": "2025-11-30T18:33:39.184327"
+    },
+    {
+      "id": "8626c735-dfb5-4b40-9324-9e3cb484332e",
+      "title": "Book Recommendations",
+      "content": "Books to Read:\n\nFiction:\n- \"The Midnight Library\" by Matt Haig\n- \"Project Hail Mary\" by Andy Weir\n- \"Klara and the Sun\" by Kazuo Ishiguro\n\nNon-Fiction:\n- \"Atomic Habits\" by James Clear\n- \"Thinking, Fast and Slow\" by Daniel Kahneman\n- \"The Pragmatic Programmer\" by Hunt & Thomas\n\nTechnical:\n- \"Clean Code\" by Robert Martin\n- \"Design Patterns\" by Gang of Four",
+      "tags": [
+        "books",
+        "reading",
+        "recommendations"
+      ],
+      "created_at": "2025-11-30T18:33:39.184529",
+      "modified_at": "2025-11-30T18:33:39.184529"
+    },
+    {
+      "id": "a5c65e2a-c2f4-44c5-a028-40dd60dac130",
+      "title": "Recipe: Chocolate Chip Cookies",
+      "content": "Ingredients:\n- 2 1/4 cups all-purpose flour\n- 1 tsp baking soda\n- 1 tsp salt\n- 1 cup butter, softened\n- 3/4 cup granulated sugar\n- 3/4 cup packed brown sugar\n- 2 large eggs\n- 2 tsp vanilla extract\n- 2 cups chocolate chips\n\nInstructions:\n1. Preheat oven to 375°F\n2. Mix flour, baking soda, and salt\n3. Beat butter and sugars until creamy\n4. Add eggs and vanilla\n5. Gradually blend in flour mixture\n6. Stir in chocolate chips\n7. Drop rounded tablespoons onto baking sheets\n8. Bake 9-11 minutes\n\nEnjoy!",
+      "tags": [
+        "recipe",
+        "cooking",
+        "dessert"
+      ],
+      "created_at": "2025-11-30T18:33:39.184737",
+      "modified_at": "2025-11-30T18:33:39.184737"
+    },
+    {
+      "id": "44925dd2-3cde-4fe7-b48d-c977e81f5ecc",
+      "title": "Workout Routine",
+      "content": "Weekly Workout Plan:\n\nMonday: Upper Body\n- Push-ups: 3 sets of 15\n- Dumbbell rows: 3 sets of 12\n- Shoulder press: 3 sets of 10\n\nWednesday: Lower Body\n- Squats: 3 sets of 15\n- Lunges: 3 sets of 12 each leg\n- Calf raises: 3 sets of 20\n\nFriday: Full Body\n- Burpees: 3 sets of 10\n- Plank: 3 sets of 60 seconds\n- Mountain climbers: 3 sets of 20\n\nRemember to stretch and stay hydrated!",
+      "tags": [
+        "fitness",
+        "workout",
+        "health"
+      ],
+      "created_at": "2025-11-30T18:33:39.184959",
+      "modified_at": "2025-11-30T18:33:39.184959"
+    }
+  ],
+  "last_saved": "2025-11-30T18:33:39.184968"
+}
