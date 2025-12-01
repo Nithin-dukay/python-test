@@ -3,45 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Tesla | Electric Cars, Solar & Clean Energy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.tesla.com/favicon.ico">
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            color: #1f2933;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.65);
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center">
-    <div class="text-center">
-        <div class="bg-white rounded-2xl shadow-xl p-12 max-w-md mx-auto transform hover:scale-105 transition-transform duration-300">
-            <div class="mb-6">
-                <i class="fas fa-globe text-6xl text-indigo-600 mb-4"></i>
-            </div>
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Hello World!</h1>
-            <p class="text-gray-600 text-lg mb-6">Welcome to your first web page</p>
-            <div class="flex justify-center space-x-4">
-                <div class="bg-indigo-100 rounded-full p-3">
-                    <i class="fas fa-code text-indigo-600"></i>
-                </div>
-                <div class="bg-green-100 rounded-full p-3">
-                    <i class="fas fa-check text-green-600"></i>
-                </div>
-                <div class="bg-yellow-100 rounded-full p-3">
-                    <i class="fas fa-star text-yellow-600"></i>
+<body class="bg-slate-50 text-slate-900">
+    <header class="hero-bg">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between py-6 px-6 md:px-10">
+            <div class="flex items-center space-x-4">
+                <img src="https://www.tesla.com/sites/default/files/drupal8/logo.png" alt="Tesla" class="h-6">
+                <div class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-wide text-white">
+                    <a href="#models" class="hover:text-slate-200">Model S</a>
+                    <a href="#model3" class="hover:text-slate-200">Model 3</a>
+                    <a href="#modelx" class="hover:text-slate-200">Model X</a>
+                    <a href="#modely" class="hover:text-slate-200">Model Y</a>
+                    <a href="#solar" class="hover:text-slate-200">Solar Roof</a>
+                    <a href="#powerwall" class="hover:text-slate-200">Powerwall</a>
                 </div>
             </div>
-            <div class="mt-8">
-                <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 transform hover:scale-105">
-                    <i class="fas fa-rocket mr-2"></i>
-                    Get Started
+            <div class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-wide text-white">
+                <a href="#shop" class="hover:text-slate-200">Shop</a>
+                <a href="#account" class="hover:text-slate-200">Account</a>
+                <a href="#menu" class="hover:text-slate-200">Menu</a>
+            </div>
+            <div class="md:hidden text-white">
+                <button id="menu-btn" aria-label="Open menu" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.75h16.5m-16.5 6.5h16.5m-16.5 6.5h16.5" />
+                    </svg>
                 </button>
             </div>
+        </nav>
+        <div class="max-w-7xl mx-auto px-6 md:px-10 py-24 md:py-32 lg:py-40">
+            <div class="max-w-xl glass rounded-xl p-8 md:p-10 shadow-lg">
+                <span class="text-sm uppercase tracking-[0.3em] text-slate-700">Model S</span>
+                <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mt-4">
+                    Electric performance. Refined luxury.
+                </h1>
+                <p class="text-slate-100 text-lg md:text-xl mt-4">
+                    Experience instant acceleration, uncompromised range, and the most advanced technology in the world’s first premium electric sedan.
+                </p>
+                <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-8">
+                    <a href="#order" class="bg-white text-slate-900 text-center font-medium uppercase tracking-wide py-3 rounded-lg shadow hover:bg-slate-100 transition">Custom Order</a>
+                    <a href="#demo" class="bg-transparent border border-white text-white text-center font-medium uppercase tracking-wide py-3 rounded-lg hover:bg-white/10 transition">Schedule a Demo Drive</a>
+                </div>
+            </div>
         </div>
-        <div class="mt-8 text-gray-500">
-            <p class="text-sm">Built with ❤️ using HTML, CSS & Tailwind</p>
+    </header>
+
+    <main>
+        <section id="stats" class="max-w-6xl mx-auto px-6 md:px-10 py-16">
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="glass rounded-xl p-8 shadow">
+                    <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Range</p>
+                    <h3 class="text-3xl font-semibold text-slate-900 mt-3">396 mi</h3>
+                    <p class="text-slate-600 mt-3">Go farther on a single charge with industry-leading battery technology and regenerative braking.</p>
+                </div>
+                <div class="glass rounded-xl p-8 shadow">
+                    <p class="text-sm uppercase tracking-[0.3em] text-slate-500">0-60mph</p>
+                    <h3 class="text-3xl font-semibold text-slate-900 mt-3">1.99 s</h3>
+                    <p class="text-slate-600 mt-3">Instant torque and an all-wheel drive platform deliver extraordinary performance in the Model S Plaid.</p>
+                </div>
+                <div class="glass rounded-xl p-8 shadow">
+                    <p class="text-sm uppercase tracking-[0.3em] text-slate-500">Top speed</p>
+                    <h3 class="text-3xl font-semibold text-slate-900 mt-3">200 mph</h3>
+                    <p class="text-slate-600 mt-3">Optimized aerodynamics and powertrain technology make Model S one of the fastest production cars.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="design" class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-12 items-center">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Model S Exterior" class="rounded-2xl shadow-xl">
+                <div>
+                    <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Design</span>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-slate-900 mt-3">Iconic silhouette, reimagined.</h2>
+                    <p class="text-slate-600 mt-4 leading-relaxed">Model S is built for speed and range, with the lowest drag coefficient on Earth and unparalleled performance. Active aero and clean lines enhance efficiency so you can travel further on a single charge.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+                        <div class="p-6 rounded-xl bg-slate-100">
+                            <p class="text-sm tracking-wide uppercase text-slate-500">Coefficient of drag</p>
+                            <p class="text-2xl font-semibold text-slate-900 mt-2">0.208 Cd</p>
+                        </div>
+                        <div class="p-6 rounded-xl bg-slate-100">
+                            <p class="text-sm tracking-wide uppercase text-slate-500">Wheels</p>
+                            <p class="text-2xl font-semibold text-slate-900 mt-2">19" or 21"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interior" class="py-16 bg-slate-900">
+            <div class="max-w-6xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-12 items-center text-white">
+                <div>
+                    <span class="text-sm uppercase tracking-[0.3em] text-slate-400">Interior</span>
+                    <h2 class="text-3xl md:text-4xl font-semibold mt-3">Beyond premium. A new experience.</h2>
+                    <p class="text-slate-300 mt-4 leading-relaxed">A clean, minimalist cabin sets a new standard for comfort. Redesigned second-row seats offer extra legroom and roomier interiors, while tri-zone climate control, ventilated seats, and HEPA filtration keep everyone comfortable.</p>
+                    <ul class="grid gap-4 mt-8">
+                        <li class="flex items-center space-x-4">
+                            <div class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-200">17" cinematic display with 2200x1300 resolution</p>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <div class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-200">Wireless gaming with controller compatibility</p>
+                        </li>
+                        <li class="flex items-center space-x-4">
+                            <div class="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+                                </svg>
+                            </div>
+                            <p class="text-slate-200">Immersive 22-speaker, 960-watt audio system</p>
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://images.unsplash.com/photo-1620891549027-942fdc95d3a2?auto=format&fit=crop&w=1200&q=80" alt="Model S Interior" class="rounded-2xl shadow-xl">
+            </div>
+        </section>
+
+        <section id="autopilot" class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-6 md:px-10 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Autopilot</span>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-slate-900 mt-3">Full Self-Driving Capability</h2>
+                    <p class="text-slate-600 mt-4 leading-relaxed">Advanced safety and convenience features are designed to assist you with the most burdensome parts of driving. Model S comes standard with emergency braking, collision warning, and blind-spot monitoring.</p>
+                    <div class="grid gap-4 mt-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-700">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">Navigate on Autopilot</p>
+                                <p class="text-slate-600">Active guidance from on-ramp to off-ramp, including interchanges and overtaking slower cars.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-700">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 8.25 12 3l7.5 5.25-7.5 5.25-7.5-5.25ZM3 19.5h18M3 16.5h18" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">Auto Lane Change</p>
+                                <p class="text-slate-600">Assists in moving to an adjacent lane on the highway when Autosteer is engaged.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-slate-700">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-6m0 0V6m0 6h6m-6 0H6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">Summon</p>
+                                <p class="text-slate-600">Automatically park and retrieve your Model S using the Tesla app while standing outside the vehicle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1200&q=80" alt="Autopilot Visualization" class="rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </section>
+
+        <section id="energy" class="bg-slate-100 py-16">
+            <div class="max-w-6xl mx-auto px-6 md:px-10">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1">
+                        <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Energy</span>
+                        <h2 class="text-3xl md:text-4xl font-semibold text-slate-900 mt-3">Power everything.</h2>
+                        <p class="text-slate-600 mt-4 leading-relaxed">Combine Tesla solar panels and Powerwall home battery to harness renewable energy, reduce electricity bills, and achieve energy independence.</p>
+                        <a href="#solar" class="inline-flex items-center mt-6 text-slate-900 font-semibold">Explore Energy Products
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+                        <div class="bg-white rounded-2xl shadow p-6">
+                            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Solar Roof" class="rounded-xl">
+                            <h3 class="mt-4 text-xl font-semibold text-slate-900">Solar Roof</h3>
+                            <p class="text-slate-600 mt-2">Beautiful, durable roof tiles that produce clean energy for your home.</p>
+                        </div>
+                        <div class="bg-white rounded-2xl shadow p-6">
+                            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Powerwall" class="rounded-xl">
+                            <h3 class="mt-4 text-xl font-semibold text-slate-900">Powerwall</h3>
+                            <p class="text-slate-600 mt-2">Rechargeable home battery system that stores solar energy for backup protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="bg-white py-16">
+            <div class="max-w-4xl mx-auto px-6 md:px-10 text-center">
+                <span class="text-sm uppercase tracking-[0.3em] text-slate-500">Order</span>
+                <h2 class="text-3xl md:text-4xl font-semibold text-slate-900 mt-3">Ready to go electric?</h2>
+                <p class="text-slate-600 mt-4 leading-relaxed">Customize your Model S or schedule a demo drive to experience the future of driving. Flexible leasing and financing options are available.</p>
+                <div class="mt-10 grid sm:grid-cols-2 gap-6">
+                    <div class="p-6 border border-slate-200 rounded-xl">
+                        <h3 class="text-xl font-semibold text-slate-900">Custom Order</h3>
+                        <p class="text-slate-600 mt-3">Design your Model S with preferred specs, interior, and upgrades.</p>
+                        <button class="mt-6 w-full bg-slate-900 text-white uppercase tracking-wide py-3 rounded-lg hover:bg-slate-800 transition">Order Now</button>
+                    </div>
+                    <div class="p-6 border border-slate-200 rounded-xl">
+                        <h3 class="text-xl font-semibold text-slate-900">Demo Drive</h3>
+                        <p class="text-slate-600 mt-3">Experience Model S firsthand with a Tesla specialist.</p>
+                        <button class="mt-6 w-full bg-white border border-slate-900 text-slate-900 uppercase tracking-wide py-3 rounded-lg hover:bg-slate-100 transition">Schedule Drive</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 text-sm py-8">
+        <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p>© 2024 Tesla. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#privacy" class="hover:text-white">Privacy & Legal</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+                <a href="#careers" class="hover:text-white">Careers</a>
+                <a href="#news" class="hover:text-white">News</a>
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const navMenu = document.createElement('div');
+        navMenu.className = 'md:hidden fixed inset-0 bg-black/60 backdrop-blur flex justify-end';
+        navMenu.innerHTML = `
+            <div class="w-72 bg-white h-full p-6">
+                <div class="flex justify-between items-center">
+                    <img src="https://www.tesla.com/sites/default/files/drupal8/logo.png" alt="Tesla" class="h-6">
+                    <button id="close-menu" aria-label="Close menu" class="text-slate-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-8 flex flex-col space-y-4 text-slate-800 uppercase text-sm tracking-wide">
+                    <a href="#models" class="hover:text-slate-500">Model S</a>
+                    <a href="#model3" class="hover:text-slate-500">Model 3</a>
+                    <a href="#modelx" class="hover:text-slate-500">Model X</a>
+                    <a href="#modely" class="hover:text-slate-500">Model Y</a>
+                    <a href="#solar" class="hover:text-slate-500">Solar Roof</a>
+                    <a href="#powerwall" class="hover:text-slate-500">Powerwall</a>
+                    <a href="#shop" class="hover:text-slate-500">Shop</a>
+                    <a href="#account" class="hover:text-slate-500">Account</a>
+                </div>
+            </div>
+        `;
+
+        menuBtn.addEventListener('click', () => {
+            document.body.appendChild(navMenu);
+            setTimeout(() => navMenu.classList.add('opacity-100'), 10);
+            const closeMenu = document.getElementById('close-menu');
+            closeMenu.addEventListener('click', () => {
+                navMenu.classList.remove('opacity-100');
+                setTimeout(() => navMenu.remove(), 200);
+            });
+        });
+    </script>
 </body>
 </html>
