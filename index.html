@@ -1,47 +1,454 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Tesla | Electric Cars, Solar & Clean Energy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 15vh;
+        }
+
+        .hero-actions {
+            position: relative;
+            z-index: 10;
+            margin-bottom: 8vh;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 0 2rem;
+        }
+
+        .nav-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            transition: all 0.3s ease;
+        }
+
+        .nav-scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-scrolled a {
+            color: #171a20 !important;
+        }
+
+        .btn-primary {
+            background: rgba(23, 26, 32, 0.8);
+            color: white;
+            padding: 12px 64px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background: rgba(23, 26, 32, 0.95);
+            transform: scale(1.02);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.8);
+            color: #171a20;
+            padding: 12px 64px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.95);
+            transform: scale(1.02);
+        }
+
+        .model-s-bg {
+            background-image: url('https://images.unsplash.com/photo-1617788138017-80ad40651399?w=1920&q=80');
+        }
+
+        .model-3-bg {
+            background-image: url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=1920&q=80');
+        }
+
+        .model-x-bg {
+            background-image: url('https://images.unsplash.com/photo-1571607388263-1044f9ea01dd?w=1920&q=80');
+        }
+
+        .model-y-bg {
+            background-image: url('https://images.unsplash.com/photo-1583267746897-c5e0c8c6d0c5?w=1920&q=80');
+        }
+
+        .solar-bg {
+            background-image: url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80');
+        }
+
+        .hero-main-bg {
+            background-image: url('https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=1920&q=80');
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-actions {
+                width: 100%;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+            }
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center">
-    <div class="text-center">
-        <div class="bg-white rounded-2xl shadow-xl p-12 max-w-md mx-auto transform hover:scale-105 transition-transform duration-300">
-            <div class="mb-6">
-                <i class="fas fa-globe text-6xl text-indigo-600 mb-4"></i>
-            </div>
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Hello World!</h1>
-            <p class="text-gray-600 text-lg mb-6">Welcome to your first web page</p>
-            <div class="flex justify-center space-x-4">
-                <div class="bg-indigo-100 rounded-full p-3">
-                    <i class="fas fa-code text-indigo-600"></i>
+<body class="bg-white text-gray-900">
+    
+    <!-- Navigation -->
+    <nav class="nav-header" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold tracking-wider text-white">TESLA</a>
                 </div>
-                <div class="bg-green-100 rounded-full p-3">
-                    <i class="fas fa-check text-green-600"></i>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#model-s" class="nav-link text-white hover:text-gray-300 text-sm font-medium">Model S</a>
+                    <a href="#model-3" class="nav-link text-white hover:text-gray-300 text-sm font-medium">Model 3</a>
+                    <a href="#model-x" class="nav-link text-white hover:text-gray-300 text-sm font-medium">Model X</a>
+                    <a href="#model-y" class="nav-link text-white hover:text-gray-300 text-sm font-medium">Model Y</a>
+                    <a href="#solar" class="nav-link text-white hover:text-gray-300 text-sm font-medium">Solar</a>
                 </div>
-                <div class="bg-yellow-100 rounded-full p-3">
-                    <i class="fas fa-star text-yellow-600"></i>
+
+                <!-- Right Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-white hover:text-gray-300 text-sm font-medium">Shop</a>
+                    <a href="#" class="text-white hover:text-gray-300 text-sm font-medium">Account</a>
+                    <a href="#" class="text-white hover:text-gray-300 text-sm font-medium">Menu</a>
                 </div>
-            </div>
-            <div class="mt-8">
-                <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 transform hover:scale-105">
-                    <i class="fas fa-rocket mr-2"></i>
-                    Get Started
-                </button>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-white hover:text-gray-300">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="mt-8 text-gray-500">
-            <p class="text-sm">Built with ❤️ using HTML, CSS & Tailwind</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section hero-main-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-6xl font-semibold text-white mb-2">Experience Tesla</h1>
+            <p class="text-lg md:text-xl text-white font-light">Schedule a Demo Drive Today</p>
         </div>
-    </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Custom Order</button>
+            <button class="btn-secondary">Demo Drive</button>
+        </div>
+        <div class="scroll-indicator">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Model S Section -->
+    <section id="model-s" class="hero-section model-s-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-6xl font-semibold text-white mb-2">Model S</h1>
+            <p class="text-lg md:text-xl text-white font-light">Plaid</p>
+            <div class="flex flex-col md:flex-row gap-8 mt-8 text-white">
+                <div>
+                    <p class="text-3xl font-semibold">1.99s</p>
+                    <p class="text-sm">0-60 mph</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">200mph</p>
+                    <p class="text-sm">Top Speed</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">396mi</p>
+                    <p class="text-sm">Range (EPA est.)</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Order Now</button>
+            <button class="btn-secondary">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Model 3 Section -->
+    <section id="model-3" class="hero-section model-3-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-6xl font-semibold text-white mb-2">Model 3</h1>
+            <p class="text-lg md:text-xl text-white font-light">Starting at $40,240</p>
+            <p class="text-sm text-white mt-2">After Federal Tax Credit</p>
+            <div class="flex flex-col md:flex-row gap-8 mt-8 text-white">
+                <div>
+                    <p class="text-3xl font-semibold">3.1s</p>
+                    <p class="text-sm">0-60 mph</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">162mph</p>
+                    <p class="text-sm">Top Speed</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">358mi</p>
+                    <p class="text-sm">Range (EPA est.)</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Order Now</button>
+            <button class="btn-secondary">Demo Drive</button>
+        </div>
+    </section>
+
+    <!-- Model X Section -->
+    <section id="model-x" class="hero-section model-x-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-6xl font-semibold text-white mb-2">Model X</h1>
+            <p class="text-lg md:text-xl text-white font-light">Plaid</p>
+            <div class="flex flex-col md:flex-row gap-8 mt-8 text-white">
+                <div>
+                    <p class="text-3xl font-semibold">2.5s</p>
+                    <p class="text-sm">0-60 mph</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">9.9s</p>
+                    <p class="text-sm">1/4 Mile</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">333mi</p>
+                    <p class="text-sm">Range (EPA est.)</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Order Now</button>
+            <button class="btn-secondary">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Model Y Section -->
+    <section id="model-y" class="hero-section model-y-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-6xl font-semibold text-white mb-2">Model Y</h1>
+            <p class="text-lg md:text-xl text-white font-light">Starting at $44,990</p>
+            <div class="flex flex-col md:flex-row gap-8 mt-8 text-white">
+                <div>
+                    <p class="text-3xl font-semibold">3.5s</p>
+                    <p class="text-sm">0-60 mph</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">135mph</p>
+                    <p class="text-sm">Top Speed</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-semibold">330mi</p>
+                    <p class="text-sm">Range (EPA est.)</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Order Now</button>
+            <button class="btn-secondary">Demo Drive</button>
+        </div>
+    </section>
+
+    <!-- Solar Section -->
+    <section id="solar" class="hero-section solar-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-6xl font-semibold text-white mb-2">Solar & Powerwall</h1>
+            <p class="text-lg md:text-xl text-white font-light">Power Everything</p>
+        </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Order Now</button>
+            <button class="btn-secondary">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Vehicles</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#model-s" class="hover:text-white">Model S</a></li>
+                        <li><a href="#model-3" class="hover:text-white">Model 3</a></li>
+                        <li><a href="#model-x" class="hover:text-white">Model X</a></li>
+                        <li><a href="#model-y" class="hover:text-white">Model Y</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Energy</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">Solar Panels</a></li>
+                        <li><a href="#" class="hover:text-white">Solar Roof</a></li>
+                        <li><a href="#" class="hover:text-white">Powerwall</a></li>
+                        <li><a href="#" class="hover:text-white">Megapack</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Charging</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">Charging</a></li>
+                        <li><a href="#" class="hover:text-white">Supercharger</a></li>
+                        <li><a href="#" class="hover:text-white">Trip Planner</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-white">Investor Relations</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2025 Tesla, Inc. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy</a>
+                    <a href="#" class="hover:text-white">Legal</a>
+                    <a href="#" class="hover:text-white">Contact</a>
+                    <a href="#" class="hover:text-white">News</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
