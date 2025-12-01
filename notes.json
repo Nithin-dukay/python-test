@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "UntitleMy First Noted Note",
+    "content": "This is my first note in the note-taking app. I can write anything I want here and it will be saved automatically!",
+    "created_at": "2025-12-01T22:43:58.391647",
+    "updated_at": "2025-12-01T22:44:50.081628"
+  },
+  {
+    "id": 2,
+    "title": "UntitleShopping Listd Note",
+    "content": "- Milk\n- Eggs\n- Bread\n- Butter\n- Coffee",
+    "created_at": "2025-12-01T22:45:17.450259",
+    "updated_at": "2025-12-01T22:45:58.594556"
+  }
+]
