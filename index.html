@@ -3,45 +3,569 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Tesla | Electric Cars, Solar & Clean Energy</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .hero-bg-1 {
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2000');
+        }
+
+        .hero-bg-2 {
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=2000');
+        }
+
+        .hero-bg-3 {
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=2000');
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.95);
+            transition: all 0.3s ease;
+        }
+
+        .nav-transparent {
+            background-color: transparent;
+            backdrop-filter: none;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            margin-top: 120px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1rem;
+            font-weight: 400;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 80px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            padding: 12px 60px;
+            background-color: rgba(23, 26, 32, 0.8);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(23, 26, 32, 0.95);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            padding: 12px 60px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #171a20;
+            border: none;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            transform: translateY(-2px);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .model-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .model-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            font-size: 36px;
+        }
+
+        .stats-section {
+            background: linear-gradient(135deg, #171a20 0%, #2d3139 100%);
+            color: white;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .btn-primary, .btn-secondary {
+                width: 100%;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .desktop-menu {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center">
-    <div class="text-center">
-        <div class="bg-white rounded-2xl shadow-xl p-12 max-w-md mx-auto transform hover:scale-105 transition-transform duration-300">
-            <div class="mb-6">
-                <i class="fas fa-globe text-6xl text-indigo-600 mb-4"></i>
-            </div>
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">Hello World!</h1>
-            <p class="text-gray-600 text-lg mb-6">Welcome to your first web page</p>
-            <div class="flex justify-center space-x-4">
-                <div class="bg-indigo-100 rounded-full p-3">
-                    <i class="fas fa-code text-indigo-600"></i>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-bar nav-transparent" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-8">
+                    <div class="text-2xl font-bold tracking-tight">TESLA</div>
+                    <div class="desktop-menu flex space-x-6 ml-8">
+                        <a href="#model-s" class="text-sm font-medium hover:text-gray-600 transition">Model S</a>
+                        <a href="#model-3" class="text-sm font-medium hover:text-gray-600 transition">Model 3</a>
+                        <a href="#model-x" class="text-sm font-medium hover:text-gray-600 transition">Model X</a>
+                        <a href="#model-y" class="text-sm font-medium hover:text-gray-600 transition">Model Y</a>
+                        <a href="#solar" class="text-sm font-medium hover:text-gray-600 transition">Solar Panels</a>
+                        <a href="#energy" class="text-sm font-medium hover:text-gray-600 transition">Solar Roof</a>
+                    </div>
                 </div>
-                <div class="bg-green-100 rounded-full p-3">
-                    <i class="fas fa-check text-green-600"></i>
+                <div class="desktop-menu flex space-x-6">
+                    <a href="#shop" class="text-sm font-medium hover:text-gray-600 transition">Shop</a>
+                    <a href="#account" class="text-sm font-medium hover:text-gray-600 transition">Account</a>
+                    <a href="#menu" class="text-sm font-medium hover:text-gray-600 transition">Menu</a>
                 </div>
-                <div class="bg-yellow-100 rounded-full p-3">
-                    <i class="fas fa-star text-yellow-600"></i>
-                </div>
-            </div>
-            <div class="mt-8">
-                <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 transform hover:scale-105">
-                    <i class="fas fa-rocket mr-2"></i>
-                    Get Started
-                </button>
+                <button class="mobile-menu text-sm font-medium">Menu</button>
             </div>
         </div>
-        <div class="mt-8 text-gray-500">
-            <p class="text-sm">Built with ❤️ using HTML, CSS & Tailwind</p>
+    </nav>
+
+    <!-- Hero Section - Model 3 -->
+    <section class="hero-section hero-bg-1">
+        <div class="hero-content">
+            <h1 class="hero-title">Model 3</h1>
+            <p class="hero-subtitle">Order Online for Touchless Delivery</p>
         </div>
-    </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Custom Order</button>
+            <button class="btn-secondary">Existing Inventory</button>
+        </div>
+    </section>
+
+    <!-- Hero Section - Model Y -->
+    <section class="hero-section hero-bg-2">
+        <div class="hero-content">
+            <h1 class="hero-title">Model Y</h1>
+            <p class="hero-subtitle">Schedule a Demo Drive</p>
+        </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Custom Order</button>
+            <button class="btn-secondary">Demo Drive</button>
+        </div>
+    </section>
+
+    <!-- Hero Section - Model S -->
+    <section class="hero-section hero-bg-3">
+        <div class="hero-content">
+            <h1 class="hero-title">Model S</h1>
+            <p class="hero-subtitle">Plaid - Beyond Ludicrous</p>
+        </div>
+        <div class="hero-actions">
+            <button class="btn-primary">Custom Order</button>
+            <button class="btn-secondary">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="stat-item">
+                    <div class="stat-number">3.1s</div>
+                    <p class="text-gray-300">0-60 mph*</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">405mi</div>
+                    <p class="text-gray-300">Range (EPA est.)</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">AWD</div>
+                    <p class="text-gray-300">Dual Motor</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">$7,500</div>
+                    <p class="text-gray-300">Federal Tax Credit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="py-20 bg-gray-50" id="models">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Our Vehicle Lineup</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Model S Card -->
+                <div class="model-card">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white text-6xl font-bold">
+                        S
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model S</h3>
+                        <p class="text-gray-600 mb-4">Premium sedan with incredible performance</p>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <p><strong>Range:</strong> 405 miles</p>
+                            <p><strong>Top Speed:</strong> 200 mph</p>
+                            <p><strong>0-60 mph:</strong> 3.1s</p>
+                        </div>
+                        <button class="w-full mt-6 btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Model 3 Card -->
+                <div class="model-card">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-6xl font-bold">
+                        3
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model 3</h3>
+                        <p class="text-gray-600 mb-4">Affordable luxury and efficiency</p>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <p><strong>Range:</strong> 358 miles</p>
+                            <p><strong>Top Speed:</strong> 162 mph</p>
+                            <p><strong>0-60 mph:</strong> 3.1s</p>
+                        </div>
+                        <button class="w-full mt-6 btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Model X Card -->
+                <div class="model-card">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center text-white text-6xl font-bold">
+                        X
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model X</h3>
+                        <p class="text-gray-600 mb-4">Versatile SUV with falcon wing doors</p>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <p><strong>Range:</strong> 348 miles</p>
+                            <p><strong>Top Speed:</strong> 163 mph</p>
+                            <p><strong>0-60 mph:</strong> 3.8s</p>
+                        </div>
+                        <button class="w-full mt-6 btn-primary">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Model Y Card -->
+                <div class="model-card">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center text-white text-6xl font-bold">
+                        Y
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Model Y</h3>
+                        <p class="text-gray-600 mb-4">Compact SUV with maximum versatility</p>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <p><strong>Range:</strong> 330 miles</p>
+                            <p><strong>Top Speed:</strong> 155 mph</p>
+                            <p><strong>0-60 mph:</strong> 4.8s</p>
+                        </div>
+                        <button class="w-full mt-6 btn-primary">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-900">Why Tesla</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="feature-card">
+                    <div class="feature-icon text-white">
+                        ⚡
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Electric Performance</h3>
+                    <p class="text-gray-600">Instant torque and incredible acceleration. Zero emissions, maximum performance.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon text-white">
+                        🤖
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Autopilot</h3>
+                    <p class="text-gray-600">Advanced driver assistance features for enhanced safety and convenience on every drive.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon text-white">
+                        🔋
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Long Range</h3>
+                    <p class="text-gray-600">Go anywhere with up to 405 miles of range and access to global Supercharger network.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon text-white">
+                        🛡️
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Safety First</h3>
+                    <p class="text-gray-600">Built to be the safest cars on the road with industry-leading safety ratings.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon text-white">
+                        📱
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Over-the-Air Updates</h3>
+                    <p class="text-gray-600">Your car gets better over time with regular software updates and new features.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon text-white">
+                        🌍
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Sustainable Energy</h3>
+                    <p class="text-gray-600">Accelerate the world's transition to sustainable energy with solar and storage solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Experience Tesla</h2>
+            <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                Schedule a demo drive today and experience the future of transportation.
+                Feel the instant acceleration, advanced technology, and premium comfort.
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <button class="btn-secondary">Schedule Demo Drive</button>
+                <button class="btn-primary">Find a Showroom</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold mb-4">Vehicles</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Model S</a></li>
+                        <li><a href="#" class="hover:text-white transition">Model 3</a></li>
+                        <li><a href="#" class="hover:text-white transition">Model X</a></li>
+                        <li><a href="#" class="hover:text-white transition">Model Y</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cybertruck</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Energy</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Solar Panels</a></li>
+                        <li><a href="#" class="hover:text-white transition">Solar Roof</a></li>
+                        <li><a href="#" class="hover:text-white transition">Powerwall</a></li>
+                        <li><a href="#" class="hover:text-white transition">Megapack</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Investors</a></li>
+                        <li><a href="#" class="hover:text-white transition">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Support</a></li>
+                        <li><a href="#" class="hover:text-white transition">Find Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Locations</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2024 Tesla, Inc. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy</a>
+                    <a href="#" class="hover:text-white transition">Legal</a>
+                    <a href="#" class="hover:text-white transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.remove('nav-transparent');
+            } else {
+                navbar.classList.add('nav-transparent');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.model-card, .feature-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
