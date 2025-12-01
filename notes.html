@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 My Notes</h1>
+            <button id="addNoteBtn" class="btn-primary">+ New Note</button>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search notes..." class="search-input">
+        </div>
+
+        <div id="notesContainer" class="notes-grid">
+            <!-- Notes will be dynamically added here -->
+        </div>
+
+        <div id="emptyState" class="empty-state">
+            <p>No notes yet. Click "New Note" to create one!</p>
+        </div>
+    </div>
+
+    <!-- Modal for creating/editing notes -->
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">New Note</h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="noteTitle" placeholder="Note title..." class="input-title">
+                <textarea id="noteContent" placeholder="Start typing your note..." class="input-content"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button id="deleteNoteBtn" class="btn-delete" style="display: none;">Delete</button>
+                <button id="saveNoteBtn" class="btn-primary">Save Note</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="notes.js"></script>
+</body>
+</html>
